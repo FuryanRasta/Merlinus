@@ -1,9 +1,9 @@
 syntax = "proto3";
-package desmos.profiles.v3;
+package mage.profiles.v3;
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/profiles/types";
+option go_package = "github.com/warmage-sports/mage/x/profiles/types";
 
-import "desmos/profiles/v3/models_app_links.proto";
+import "mage/profiles/v3/models_app_links.proto";
 
 import "gogoproto/gogo.proto";
 import "ibc/core/client/v1/client.proto";
@@ -59,7 +59,7 @@ message MsgUnlinkApplication {
   // Username represents the username inside the application to unlink
   string username = 2 [ (gogoproto.moretags) = "yaml:\"username\"" ];
 
-  // Signer represents the Desmos account to which the application should be
+  // Signer represents the Mage account to which the application should be
   // unlinked
   string signer = 3 [ (gogoproto.moretags) = "yaml:\"signer\"" ];
 }

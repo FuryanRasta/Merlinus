@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"math/rand"
 
-	subspacessim "github.com/desmos-labs/desmos/v4/x/subspaces/simulation"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/desmos-labs/desmos/v4/x/relationships/types"
+	"github.com/warmage-sports/mage/x/relationships/types"
 )
 
 // RandomizedGenState generates a random GenesisState for profile

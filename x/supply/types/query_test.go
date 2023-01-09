@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/supply/types"
+	"github.com/warmage-sports/mage/x/supply/types"
 )
 
 func Test_NewDividerFromRawInt(t *testing.T) {

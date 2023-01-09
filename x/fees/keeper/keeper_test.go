@@ -3,8 +3,8 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/fees/types"
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/fees/types"
+	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
 )
 
 func (suite *KeeperTestSuite) TestKeeper_SetParams() {

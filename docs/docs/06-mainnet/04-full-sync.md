@@ -8,15 +8,15 @@ slug: full-sync
 ## Software downgrade 
 
 :::note   
-You will need to build the first version of the Desmos mainnet in order to be able to sync the chain from scratch.
+You will need to build the first version of the Mage mainnet in order to be able to sync the chain from scratch.
 :::
 
 ```bash
 # Make sure we are inside the home directory
 cd $HOME
 
-# Clone the Desmos software
-git clone https://github.com/desmos-labs/desmos.git && cd desmos
+# Clone the Mage software
+git clone https://github.com/warmage-sports/mage.git && cd mage
 
 # Checkout the correct tag
 git checkout tags/v1.0.3

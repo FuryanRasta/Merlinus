@@ -1,5 +1,5 @@
 syntax = "proto3";
-package desmos.supply.v1;
+package mage.supply.v1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -8,20 +8,20 @@ import "google/protobuf/wrappers.proto";
 import "cosmos_proto/cosmos.proto";
 import "cosmos/base/v1beta1/coin.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/supply/types";
+option go_package = "github.com/warmage-sports/mage/x/supply/types";
 
 // Query defines the gRPC querier service.
 service Query {
 
   // Total queries the total supply of the given denom
   rpc Total(QueryTotalRequest) returns (QueryTotalResponse) {
-    option (google.api.http).get = "/desmos/supply/v1/total/{denom}";
+    option (google.api.http).get = "/mage/supply/v1/total/{denom}";
   }
 
   // Circulating queries the amount of tokens circulating in the market of the
   // given denom
   rpc Circulating(QueryCirculatingRequest) returns (QueryCirculatingResponse) {
-    option (google.api.http).get = "/desmos/supply/v1/circulating/{denom}";
+    option (google.api.http).get = "/mage/supply/v1/circulating/{denom}";
   }
 }
 

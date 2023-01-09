@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/subspaces/keeper"
+	"github.com/warmage-sports/mage/x/subspaces/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

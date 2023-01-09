@@ -9,7 +9,7 @@ slug: overview
 
 ## Abstract 
 
-This document specified the fees module of Desmos. 
+This document specified the fees module of Mage. 
 
 The module allows on-chain governance to specify a minimum amount of fees that users need to pay when broadcasting specific message types. 
 

@@ -11,7 +11,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 func ParamChanges(r *rand.Rand) []simtypes.ParamChange {

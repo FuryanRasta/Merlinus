@@ -7,9 +7,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/desmos-labs/desmos/v4/cosmwasm"
-	reactionskeeper "github.com/desmos-labs/desmos/v4/x/reactions/keeper"
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
+	"github.com/warmage-sports/mage/cosmwasm"
+	reactionskeeper "github.com/warmage-sports/mage/x/reactions/keeper"
+	"github.com/warmage-sports/mage/x/reactions/types"
 )
 
 var _ cosmwasm.Querier = ReactionsWasmQuerier{}

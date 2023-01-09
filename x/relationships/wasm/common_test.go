@@ -16,17 +16,17 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	profileskeeper "github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
-	"github.com/desmos-labs/desmos/v4/x/relationships/keeper"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/app"
+	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
+	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/warmage-sports/mage/x/relationships/keeper"
+	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/relationships/types"
+	"github.com/warmage-sports/mage/x/relationships/types"
 )
 
 func buildCreateRelationshipRequest(cdc codec.Codec, msg sdk.Msg) json.RawMessage {

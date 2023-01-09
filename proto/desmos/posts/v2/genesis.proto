@@ -1,12 +1,12 @@
 syntax = "proto3";
-package desmos.posts.v2;
+package mage.posts.v2;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 
-import "desmos/posts/v2/models.proto";
+import "mage/posts/v2/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/posts/types";
+option go_package = "github.com/warmage-sports/mage/x/posts/types";
 
 // GenesisState contains the data of the genesis state for the posts module
 message GenesisState {

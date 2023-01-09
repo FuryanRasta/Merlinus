@@ -5,7 +5,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	"github.com/warmage-sports/mage/x/posts/types"
 )
 
 // Implement PostsHooks interface

@@ -12,7 +12,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 var (
@@ -48,7 +48,7 @@ var (
 	feeCoins = sdk.NewCoins(
 		sdk.NewCoin("band", sdk.NewInt(10)),
 		sdk.NewCoin("atom", sdk.NewInt(10)),
-		sdk.NewCoin("desmos", sdk.NewInt(10)),
+		sdk.NewCoin("mage", sdk.NewInt(10)),
 		sdk.NewCoin("akt", sdk.NewInt(10)),
 		sdk.NewCoin("dvpn", sdk.NewInt(10)),
 		sdk.NewCoin("daric", sdk.NewInt(10)),

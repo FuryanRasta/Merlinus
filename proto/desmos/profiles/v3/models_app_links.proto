@@ -1,7 +1,7 @@
 syntax = "proto3";
-package desmos.profiles.v3;
+package mage.profiles.v3;
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/profiles/types";
+option go_package = "github.com/warmage-sports/mage/x/profiles/types";
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
@@ -88,7 +88,7 @@ message OracleRequest {
   ];
 
   // CallData contains the data sent to a single oracle request in order to
-  // verify the ownership of a centralized application by a Desmos profile
+  // verify the ownership of a centralized application by a Mage profile
   message CallData {
     option (gogoproto.equal) = true;
 

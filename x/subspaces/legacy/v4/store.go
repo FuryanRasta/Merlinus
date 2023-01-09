@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/authz"
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 
-	subspacesauthz "github.com/desmos-labs/desmos/v4/x/subspaces/authz"
-	v2 "github.com/desmos-labs/desmos/v4/x/subspaces/legacy/v2"
+	subspacesauthz "github.com/warmage-sports/mage/x/subspaces/authz"
+	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
 )
 
 // MigrateStore migrates the store from version 3 to version 4.

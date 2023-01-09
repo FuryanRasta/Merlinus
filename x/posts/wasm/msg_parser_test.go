@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
-	"github.com/desmos-labs/desmos/v4/x/posts/wasm"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/app"
+	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/warmage-sports/mage/x/posts/wasm"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func TestMsgsParser_ParseCustomMsgs(t *testing.T) {

@@ -5,12 +5,12 @@ package simulation
 import (
 	"math/rand"
 
-	feeskeeper "github.com/desmos-labs/desmos/v4/x/fees/keeper"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacessim "github.com/desmos-labs/desmos/v4/x/subspaces/simulation"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 
-	"github.com/desmos-labs/desmos/v4/testutil/simtesting"
+	"github.com/warmage-sports/mage/testutil/simtesting"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -19,8 +19,8 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/keeper"
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
+	"github.com/warmage-sports/mage/x/reports/keeper"
+	"github.com/warmage-sports/mage/x/reports/types"
 )
 
 // SimulateMsgSupportStandardReason tests and runs a single MsgSupportStandardReason

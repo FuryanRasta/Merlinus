@@ -5,7 +5,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/desmos-labs/desmos/v4/x/supply/types"
+	"github.com/warmage-sports/mage/x/supply/types"
 )
 
 func NewQuerier(k Keeper) sdk.Querier {

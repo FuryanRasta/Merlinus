@@ -1,11 +1,11 @@
 syntax = "proto3";
-package desmos.relationships.v1;
+package mage.relationships.v1;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
 import "cosmos_proto/cosmos.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/relationships/types";
+option go_package = "github.com/warmage-sports/mage/x/relationships/types";
 
 // Msg defines the relationships Msg service.
 service Msg {

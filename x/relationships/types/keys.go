@@ -1,7 +1,7 @@
 package types
 
 import (
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 // DONTCOVER

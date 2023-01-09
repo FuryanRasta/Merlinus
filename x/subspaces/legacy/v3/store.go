@@ -3,14 +3,14 @@ package v3
 import (
 	"fmt"
 
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
+	poststypes "github.com/warmage-sports/mage/x/posts/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v2 "github.com/desmos-labs/desmos/v4/x/subspaces/legacy/v2"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
+	"github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 // MigrateStore migrates the store from version 2 to version 3.

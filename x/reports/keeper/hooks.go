@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
+	"github.com/warmage-sports/mage/x/reports/types"
 )
 
 // Implement ReportsHooks interface

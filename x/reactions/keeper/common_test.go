@@ -6,18 +6,18 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	profileskeeper "github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
+	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
 
-	postskeeper "github.com/desmos-labs/desmos/v4/x/posts/keeper"
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
-	relationshipskeeper "github.com/desmos-labs/desmos/v4/x/relationships/keeper"
-	relationshipstypes "github.com/desmos-labs/desmos/v4/x/relationships/types"
+	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
+	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
+	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
 
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
 
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
@@ -30,12 +30,12 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/warmage-sports/mage/app"
 
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reactions/keeper"
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
+	"github.com/warmage-sports/mage/x/reactions/keeper"
+	"github.com/warmage-sports/mage/x/reactions/types"
 )
 
 func TestKeeperTestSuite(t *testing.T) {

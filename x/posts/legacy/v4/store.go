@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	"github.com/warmage-sports/mage/x/posts/types"
 )
 
 // MigrateStore performs the migration from version 3 to version 4 of the store.

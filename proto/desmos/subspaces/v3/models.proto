@@ -1,12 +1,12 @@
 syntax = "proto3";
-package desmos.subspaces.v3;
+package mage.subspaces.v3;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/subspaces/types";
+option go_package = "github.com/warmage-sports/mage/x/subspaces/types";
 
-// Subspace contains all the data of a Desmos subspace
+// Subspace contains all the data of a Mage subspace
 message Subspace {
   option (gogoproto.equal) = true;
   option (gogoproto.goproto_stringer) = true;

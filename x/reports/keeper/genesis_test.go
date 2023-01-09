@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/reports/types"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestsuite) TestKeeper_ExportGenesis() {
