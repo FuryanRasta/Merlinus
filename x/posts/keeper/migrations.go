@@ -5,12 +5,12 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v4 "github.com/desmos-labs/desmos/v4/x/posts/legacy/v4"
+	v4 "github.com/mage-war/mage/x/posts/legacy/v4"
 
-	v3 "github.com/desmos-labs/desmos/v4/x/posts/legacy/v3"
+	v3 "github.com/mage-war/mage/x/posts/legacy/v3"
 
-	v2 "github.com/desmos-labs/desmos/v4/x/posts/legacy/v2"
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	v2 "github.com/mage-war/mage/x/posts/legacy/v2"
+	"github.com/mage-war/mage/x/posts/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

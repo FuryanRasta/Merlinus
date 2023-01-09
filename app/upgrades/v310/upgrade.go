@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/desmos-labs/desmos/v4/app/upgrades"
-	feestypes "github.com/desmos-labs/desmos/v4/x/fees/types"
+	"github.com/mage-war/mage/app/upgrades"
+	feestypes "github.com/mage-war/mage/x/fees/types"
 )
 
 var (

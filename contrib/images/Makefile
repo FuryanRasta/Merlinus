@@ -1,19 +1,19 @@
 desmos-env:
 	docker build --build-arg UID=$(shell id -u) --build-arg GID=$(shell id -g) --tag desmoslabs/desmos-env desmos-env
 
-desmos-python:
-	docker build --tag desmoslabs/desmos-python desmos-python
+mage-python:
+	docker build --tag desmoslabs/desmos-python mage-python
 
-desmos-cosmovisor:
+mage-cosmovisor:
 	docker build \
 		--build-arg UID=$(shell id -u) --build-arg GID=$(shell id -g) \
-		--build-arg DESMOS_VERSION=$(DESMOS_VERSION) \
-		--tag desmoslabs/desmos-cosmovisor:$(DESMOS_VERSION) \
-		desmos-cosmovisor
+		--build-arg MAGE_VERSION=$(MAGE_VERSION) \
+		--tag desmoslabs/desmos-cosmovisor:$(MAGE_VERSION) \
+		mage-cosmovisor
 
-desmos-builder:
-	docker build --tag desmoslabs/builder -f desmos-builder/Dockerfile $(CONTEXT)
+mage-builder:
+	docker build --tag desmoslabs/builder -f mage-builder/Dockerfile $(CONTEXT)
 
-all: desmos-env desmos-python desmos-cosmovisor desmos-builder
+all: desmos-env mage-python mage-cosmovisor mage-builder
 
-.PHONY: all desmos-env desmos-python desmos-cosmovisor desmos-builder
+.PHONY: all desmos-env mage-python mage-cosmovisor mage-builder

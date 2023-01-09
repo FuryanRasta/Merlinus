@@ -1,4 +1,4 @@
-module github.com/desmos-labs/desmos/v4
+module github.com/mage-war/mage
 
 go 1.18
 

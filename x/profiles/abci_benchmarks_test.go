@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles"
+	"github.com/mage-war/mage/x/profiles"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	"github.com/mage-war/mage/testutil/profilestesting"
 
 	"github.com/cosmos/cosmos-sdk/store"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -22,9 +22,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	"github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/mage-war/mage/app"
+	"github.com/mage-war/mage/x/profiles/keeper"
+	"github.com/mage-war/mage/x/profiles/types"
 )
 
 func setupBenchTest() (sdk.Context, authkeeper.AccountKeeper, keeper.Keeper) {

@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"fmt"
 
-	relationshipstypes "github.com/desmos-labs/desmos/v4/x/relationships/types"
+	relationshipstypes "github.com/mage-war/mage/x/relationships/types"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	"github.com/mage-war/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/mage-war/mage/x/profiles/keeper"
+	"github.com/mage-war/mage/x/profiles/types"
 )
 
 func (suite *KeeperTestSuite) TestMsgServer_RequestDTagTransfer() {

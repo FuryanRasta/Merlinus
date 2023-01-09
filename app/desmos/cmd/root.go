@@ -7,8 +7,8 @@ import (
 
 	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink"
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/sign"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink"
+	"github.com/mage-war/mage/app/mage/cmd/sign"
 
 	config "github.com/cosmos/cosmos-sdk/client/config"
 
@@ -18,7 +18,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	"github.com/cosmos/cosmos-sdk/snapshots"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/mage-war/mage/app"
 
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
@@ -42,12 +42,12 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	cosmosgenutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	chainlinktypes "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/getter"
-	chainlinkprovider "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/provider"
-	genutilcli "github.com/desmos-labs/desmos/v4/x/genutil/client/cli"
+	chainlinktypes "github.com/mage-war/mage/app/mage/cmd/chainlink/getter"
+	chainlinkprovider "github.com/mage-war/mage/app/mage/cmd/chainlink/provider"
+	genutilcli "github.com/mage-war/mage/x/genutil/client/cli"
 )
 
-// NewRootCmd creates a new root command for desmos. It is called once in the
+// NewRootCmd creates a new root command for mage. It is called once in the
 // main function.
 func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 	encodingConfig := app.MakeTestEncodingConfig()
@@ -60,11 +60,11 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 		WithAccountRetriever(authtypes.AccountRetriever{}).
 		WithBroadcastMode(flags.BroadcastBlock).
 		WithHomeDir(app.DefaultNodeHome).
-		WithViper("DESMOS")
+		WithViper("MAGE")
 
 	rootCmd := &cobra.Command{
-		Use:   "desmos",
-		Short: "Desmos application",
+		Use:   "mage",
+		Short: "Mage application",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			// set the default command outputs
 			cmd.SetOut(cmd.OutOrStdout())
@@ -128,7 +128,7 @@ func initAppConfig() (string, interface{}) {
 	// - if you set srvCfg.MinGasPrices non-empty, validators CAN tweak their
 	//   own app.toml to override, or use this default value.
 	//
-	// In Desmos, we set the min gas prices to 0.
+	// In Mage, we set the min gas prices to 0.
 	srvCfg.MinGasPrices = "0stake"
 
 	customAppConfig := CustomAppConfig{
@@ -170,7 +170,7 @@ func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {
 		config.Cmd(),
 	)
 
-	server.AddCommands(rootCmd, app.DefaultNodeHome, newApp, createDesmosappAndExport, addModuleInitFlags)
+	server.AddCommands(rootCmd, app.DefaultNodeHome, newApp, createMageappAndExport, addModuleInitFlags)
 
 	// add keybase, auxiliary RPC, query, and tx child commands
 	rootCmd.AddCommand(
@@ -268,7 +268,7 @@ func newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, appOpts serverty
 		panic(err)
 	}
 
-	return app.NewDesmosApp(
+	return app.NewMageApp(
 		logger, db, traceStore, true, skipUpgradeHeights,
 		cast.ToString(appOpts.Get(flags.FlagHome)),
 		cast.ToUint(appOpts.Get(server.FlagInvCheckPeriod)),
@@ -290,29 +290,29 @@ func newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, appOpts serverty
 	)
 }
 
-// createDesmosappAndExport creates a new app (optionally at a given height)
+// createMageappAndExport creates a new app (optionally at a given height)
 // and exports state.
-func createDesmosappAndExport(
+func createMageappAndExport(
 	logger log.Logger, db dbm.DB, traceStore io.Writer, height int64, forZeroHeight bool, jailAllowedAddrs []string,
 	appOpts servertypes.AppOptions,
 ) (servertypes.ExportedApp, error) {
 	encCfg := app.MakeTestEncodingConfig() // Ideally, we would reuse the one created by NewRootCmd.
 	encCfg.Marshaler = codec.NewProtoCodec(encCfg.InterfaceRegistry)
-	var desmosApp *app.DesmosApp
+	var mageApp *app.MageApp
 	if height != -1 {
-		desmosApp = app.NewDesmosApp(
+		mageApp = app.NewMageApp(
 			logger, db, traceStore, false, map[int64]bool{},
 			cast.ToString(appOpts.Get(flags.FlagHome)),
 			uint(1),
 			encCfg,
 			appOpts,
 		)
-		err := desmosApp.LoadHeight(height)
+		err := mageApp.LoadHeight(height)
 		if err != nil {
 			return servertypes.ExportedApp{}, err
 		}
 	} else {
-		desmosApp = app.NewDesmosApp(
+		mageApp = app.NewMageApp(
 			logger, db, traceStore, true, map[int64]bool{},
 			cast.ToString(appOpts.Get(flags.FlagHome)),
 			uint(1),
@@ -321,5 +321,5 @@ func createDesmosappAndExport(
 		)
 	}
 
-	return desmosApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
+	return mageApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
 }

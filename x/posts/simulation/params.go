@@ -10,7 +10,7 @@ import (
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	"github.com/mage-war/mage/x/posts/types"
 )
 
 func ParamChanges(r *rand.Rand) []simtypes.ParamChange {

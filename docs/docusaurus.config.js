@@ -35,17 +35,17 @@ function convertPageWithHrefToExternLinks(docs, generatedMenu) {
 }
 
 module.exports = {
-  title: 'Desmos documentation',
+  title: 'Mage documentation',
   staticDirectories: ['static'],
-  tagline: 'Desmos network official documentation for developers and validators',
-  url: 'https://test-docs.desmos.network',
+  tagline: 'Mage network official documentation for developers and validators',
+  url: 'https://test-docs.mage.network',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
   favicon: 'assets/favicon.ico',
   organizationName: 'desmos-labs', // Usually your GitHub org/user name.
-  projectName: 'desmos', // Usually your repo name.
+  projectName: 'mage', // Usually your repo name.
   webpack: {
     jsLoader: (isServer) => ({
       loader: require.resolve('swc-loader'),
@@ -71,7 +71,7 @@ module.exports = {
     algolia: {
       apiKey: '492b6729d095b18f5599d6584e00ae11',
       appId: '1IAGPKAXGP',
-      indexName: 'desmos',
+      indexName: 'mage',
       contextualSearch: false,
     },
     docs: {
@@ -81,10 +81,10 @@ module.exports = {
     },
     navbar: {
       logo: {
-        alt: 'Desmos logo',
+        alt: 'Mage logo',
         src: 'assets/logo.svg',
         srcDark: 'assets/logo.svg',
-        href: 'https://docs.desmos.network'
+        href: 'https://docs.mage.network'
       },
       items: [
         {
@@ -127,23 +127,23 @@ module.exports = {
           items: [
             {
               label: 'Twitter',
-              href: 'https://twitter.com/DesmosNetwork',
+              href: 'https://twitter.com/MageNetwork',
             },
             {
               label: 'Discord',
-              href: 'https://discord.desmos.network/',
+              href: 'https://discord.mage.network/',
             },
             {
               label: 'Medium',
-              href: 'https://medium.com/desmosnetwork'
+              href: 'https://medium.com/magenetwork'
             },
             {
               label: 'Telegram',
-              href: 'https://t.me/desmosnetwork',
+              href: 'https://t.me/magenetwork',
             },
             {
               label: 'Reddit (not-official)',
-              href: 'https://www.reddit.com/r/DesmosNetwork/'
+              href: 'https://www.reddit.com/r/MageNetwork/'
             }
           ],
         },
@@ -152,21 +152,21 @@ module.exports = {
           items: [
             {
               label: 'Website',
-              to: 'https://www.desmos.network',
+              to: 'https://www.mage.network',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/desmos-labs/desmos',
+              href: 'https://github.com/mage-war/mage',
             },
           ],
         },
       ],
       logo: {
-        alt: 'Desmos Logo',
+        alt: 'Mage Logo',
         src: 'assets/logo.png',
-        href: 'https://www.desmos.network',
+        href: 'https://www.mage.network',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Desmos Network`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mage Network`,
     },
   },
   presets: [
@@ -181,7 +181,7 @@ module.exports = {
             const defaultItems = await defaultSidebarItemsGenerator(args);
             return convertPageWithHrefToExternLinks(args.docs, defaultItems);
           },
-          editUrl: 'https://github.com/desmos-labs/desmos/tree/master/docs',
+          editUrl: 'https://github.com/mage-war/mage/tree/master/docs',
           showLastUpdateTime: true,
           lastVersion: "current",
           exclude: [

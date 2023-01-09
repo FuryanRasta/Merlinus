@@ -1,8 +1,8 @@
 package builder
 
 import (
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/types"
-	"github.com/desmos-labs/desmos/v4/x/profiles/client/utils"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/types"
+	"github.com/mage-war/mage/x/profiles/client/utils"
 )
 
 // ChainLinkJSONBuilder allows to build a ChainLinkJSON instance

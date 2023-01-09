@@ -7,7 +7,7 @@ import (
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
+	"github.com/mage-war/mage/x/reactions/types"
 )
 
 // RandomRegisteredReaction returns a random registered reaction from the slice given

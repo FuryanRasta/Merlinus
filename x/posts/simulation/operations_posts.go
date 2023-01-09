@@ -13,13 +13,13 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/desmos-labs/desmos/v4/testutil/simtesting"
-	feeskeeper "github.com/desmos-labs/desmos/v4/x/fees/keeper"
-	"github.com/desmos-labs/desmos/v4/x/posts/keeper"
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacessim "github.com/desmos-labs/desmos/v4/x/subspaces/simulation"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/testutil/simtesting"
+	feeskeeper "github.com/mage-war/mage/x/fees/keeper"
+	"github.com/mage-war/mage/x/posts/keeper"
+	"github.com/mage-war/mage/x/posts/types"
+	subspaceskeeper "github.com/mage-war/mage/x/subspaces/keeper"
+	subspacessim "github.com/mage-war/mage/x/subspaces/simulation"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 )
 
 // SimulateMsgCreatePost tests and runs a single msg create post

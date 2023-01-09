@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
 
-	"github.com/desmos-labs/desmos/v4/types/crypto/ethsecp256k1"
+	"github.com/mage-war/mage/types/crypto/ethsecp256k1"
 )
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
@@ -18,28 +18,28 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterConcrete(&ethsecp256k1.PubKey{}, ethsecp256k1.PubKeyName, nil)
 	cdc.RegisterConcrete(&ethsecp256k1.PrivKey{}, ethsecp256k1.PrivKeyName, nil)
 
-	cdc.RegisterConcrete(&MsgSaveProfile{}, "desmos/MsgSaveProfile", nil)
-	cdc.RegisterConcrete(&MsgDeleteProfile{}, "desmos/MsgDeleteProfile", nil)
-	cdc.RegisterConcrete(&MsgRequestDTagTransfer{}, "desmos/MsgRequestDTagTransfer", nil)
-	cdc.RegisterConcrete(&MsgCancelDTagTransferRequest{}, "desmos/MsgCancelDTagTransferRequest", nil)
-	cdc.RegisterConcrete(&MsgAcceptDTagTransferRequest{}, "desmos/MsgAcceptDTagTransferRequest", nil)
-	cdc.RegisterConcrete(&MsgRefuseDTagTransferRequest{}, "desmos/MsgRefuseDTagTransferRequest", nil)
-	cdc.RegisterConcrete(&MsgLinkChainAccount{}, "desmos/MsgLinkChainAccount", nil)
-	cdc.RegisterConcrete(&MsgUnlinkChainAccount{}, "desmos/MsgUnlinkChainAccount", nil)
-	cdc.RegisterConcrete(&MsgSetDefaultExternalAddress{}, "desmos/MsgSetDefaultExternalAddress", nil)
-	cdc.RegisterConcrete(&MsgLinkApplication{}, "desmos/MsgLinkApplication", nil)
-	cdc.RegisterConcrete(&MsgUnlinkApplication{}, "desmos/MsgUnlinkApplication", nil)
+	cdc.RegisterConcrete(&MsgSaveProfile{}, "mage/MsgSaveProfile", nil)
+	cdc.RegisterConcrete(&MsgDeleteProfile{}, "mage/MsgDeleteProfile", nil)
+	cdc.RegisterConcrete(&MsgRequestDTagTransfer{}, "mage/MsgRequestDTagTransfer", nil)
+	cdc.RegisterConcrete(&MsgCancelDTagTransferRequest{}, "mage/MsgCancelDTagTransferRequest", nil)
+	cdc.RegisterConcrete(&MsgAcceptDTagTransferRequest{}, "mage/MsgAcceptDTagTransferRequest", nil)
+	cdc.RegisterConcrete(&MsgRefuseDTagTransferRequest{}, "mage/MsgRefuseDTagTransferRequest", nil)
+	cdc.RegisterConcrete(&MsgLinkChainAccount{}, "mage/MsgLinkChainAccount", nil)
+	cdc.RegisterConcrete(&MsgUnlinkChainAccount{}, "mage/MsgUnlinkChainAccount", nil)
+	cdc.RegisterConcrete(&MsgSetDefaultExternalAddress{}, "mage/MsgSetDefaultExternalAddress", nil)
+	cdc.RegisterConcrete(&MsgLinkApplication{}, "mage/MsgLinkApplication", nil)
+	cdc.RegisterConcrete(&MsgUnlinkApplication{}, "mage/MsgUnlinkApplication", nil)
 
 	cdc.RegisterInterface((*AddressData)(nil), nil)
-	cdc.RegisterConcrete(&Bech32Address{}, "desmos/Bech32Address", nil)
-	cdc.RegisterConcrete(&Base58Address{}, "desmos/Base58Address", nil)
-	cdc.RegisterConcrete(&HexAddress{}, "desmos/HexAddress", nil)
+	cdc.RegisterConcrete(&Bech32Address{}, "mage/Bech32Address", nil)
+	cdc.RegisterConcrete(&Base58Address{}, "mage/Base58Address", nil)
+	cdc.RegisterConcrete(&HexAddress{}, "mage/HexAddress", nil)
 
 	cdc.RegisterInterface((*Signature)(nil), nil)
-	cdc.RegisterConcrete(&SingleSignature{}, "desmos/SingleSignature", nil)
-	cdc.RegisterConcrete(&CosmosMultiSignature{}, "desmos/CosmosMultiSignature", nil)
+	cdc.RegisterConcrete(&SingleSignature{}, "mage/SingleSignature", nil)
+	cdc.RegisterConcrete(&CosmosMultiSignature{}, "mage/CosmosMultiSignature", nil)
 
-	cdc.RegisterConcrete(&Profile{}, "desmos/Profile", nil)
+	cdc.RegisterConcrete(&Profile{}, "mage/Profile", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {
@@ -47,14 +47,14 @@ func RegisterInterfaces(registry types.InterfaceRegistry) {
 	registry.RegisterImplementations((*exported.VestingAccount)(nil), &Profile{})
 	registry.RegisterImplementations((*authtypes.GenesisAccount)(nil), &Profile{})
 	registry.RegisterInterface(
-		"desmos.profiles.v3.AddressData",
+		"mage.profiles.v3.AddressData",
 		(*AddressData)(nil),
 		&Bech32Address{},
 		&Base58Address{},
 		&HexAddress{},
 	)
 	registry.RegisterInterface(
-		"desmos.profiles.v3.Signature",
+		"mage.profiles.v3.Signature",
 		(*Signature)(nil),
 		&SingleSignature{},
 		&CosmosMultiSignature{},

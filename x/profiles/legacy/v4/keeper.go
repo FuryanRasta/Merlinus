@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v4types "github.com/desmos-labs/desmos/v4/x/profiles/legacy/v4/types"
+	v4types "github.com/mage-war/mage/x/profiles/legacy/v4/types"
 )
 
 type Keeper struct {

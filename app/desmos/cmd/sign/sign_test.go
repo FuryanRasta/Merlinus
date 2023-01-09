@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	cmd "github.com/desmos-labs/desmos/v4/app/desmos/cmd/sign"
+	cmd "github.com/mage-war/mage/app/mage/cmd/sign"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
@@ -19,7 +19,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/mage-war/mage/app"
 )
 
 func TestGetSignCmd(t *testing.T) {

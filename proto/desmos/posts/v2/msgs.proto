@@ -1,14 +1,14 @@
 syntax = "proto3";
-package desmos.posts.v2;
+package mage.posts.v2;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
 import "google/protobuf/timestamp.proto";
 import "cosmos_proto/cosmos.proto";
 
-import "desmos/posts/v2/models.proto";
+import "mage/posts/v2/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/posts/types";
+option go_package = "github.com/mage-war/mage/x/posts/types";
 
 // Msg defines the posts Msg service.
 service Msg {

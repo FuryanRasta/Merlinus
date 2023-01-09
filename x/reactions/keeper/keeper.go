@@ -5,7 +5,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
+	"github.com/mage-war/mage/x/reactions/types"
 )
 
 type Keeper struct {

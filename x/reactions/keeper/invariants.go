@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/x/reactions/types"
+	subspaceskeeper "github.com/mage-war/mage/x/subspaces/keeper"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 )
 
 // RegisterInvariants registers all reactions invariants

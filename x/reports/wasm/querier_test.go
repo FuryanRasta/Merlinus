@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	profilestypes "github.com/mage-war/mage/x/profiles/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
-	"github.com/desmos-labs/desmos/v4/x/reports/wasm"
+	"github.com/mage-war/mage/x/reports/types"
+	"github.com/mage-war/mage/x/reports/wasm"
 )
 
 func (suite *Testsuite) TestReportsWasmQuerier_QueryCustom() {

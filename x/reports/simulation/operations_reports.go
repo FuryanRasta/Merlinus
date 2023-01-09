@@ -6,15 +6,15 @@ import (
 	"math/rand"
 	"time"
 
-	postskeeper "github.com/desmos-labs/desmos/v4/x/posts/keeper"
-	postssim "github.com/desmos-labs/desmos/v4/x/posts/simulation"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacessim "github.com/desmos-labs/desmos/v4/x/subspaces/simulation"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	postskeeper "github.com/mage-war/mage/x/posts/keeper"
+	postssim "github.com/mage-war/mage/x/posts/simulation"
+	subspaceskeeper "github.com/mage-war/mage/x/subspaces/keeper"
+	subspacessim "github.com/mage-war/mage/x/subspaces/simulation"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 
-	feeskeeper "github.com/desmos-labs/desmos/v4/x/fees/keeper"
+	feeskeeper "github.com/mage-war/mage/x/fees/keeper"
 
-	"github.com/desmos-labs/desmos/v4/testutil/simtesting"
+	"github.com/mage-war/mage/testutil/simtesting"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -23,8 +23,8 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/keeper"
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
+	"github.com/mage-war/mage/x/reports/keeper"
+	"github.com/mage-war/mage/x/reports/types"
 )
 
 // SimulateMsgCreateReport tests and runs a single MsgCreateReport

@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	poststypes "github.com/mage-war/mage/x/posts/types"
+	"github.com/mage-war/mage/x/reactions/types"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestSuite) TestKeeper_AfterSubspaceSaved() {

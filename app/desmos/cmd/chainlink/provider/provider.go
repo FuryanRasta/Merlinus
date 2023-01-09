@@ -1,11 +1,11 @@
 package provider
 
 import (
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder"
-	multibuilder "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder/multi"
-	singlebuilder "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder/single"
-	multigetter "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/getter/multi"
-	singlegetter "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/getter/single"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/builder"
+	multibuilder "github.com/mage-war/mage/app/mage/cmd/chainlink/builder/multi"
+	singlebuilder "github.com/mage-war/mage/app/mage/cmd/chainlink/builder/single"
+	multigetter "github.com/mage-war/mage/app/mage/cmd/chainlink/getter/multi"
+	singlegetter "github.com/mage-war/mage/app/mage/cmd/chainlink/getter/single"
 )
 
 // DefaultChainLinkJSONBuilderProvider returns the default ChainLinkJSONBuilder provider implementation

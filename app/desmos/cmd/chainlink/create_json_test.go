@@ -7,19 +7,19 @@ import (
 	"encoding/hex"
 	"io/ioutil"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/builder"
 
-	cmd "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink"
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	cmd "github.com/mage-war/mage/app/mage/cmd/chainlink"
+	"github.com/mage-war/mage/testutil/profilestesting"
 
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	multibuilder "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder/multi"
-	singlebuilder "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder/single"
-	profilescliutils "github.com/desmos-labs/desmos/v4/x/profiles/client/utils"
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	multibuilder "github.com/mage-war/mage/app/mage/cmd/chainlink/builder/multi"
+	singlebuilder "github.com/mage-war/mage/app/mage/cmd/chainlink/builder/single"
+	profilescliutils "github.com/mage-war/mage/x/profiles/client/utils"
+	profilestypes "github.com/mage-war/mage/x/profiles/types"
 )
 
 func BuildMockChainLinkJSONBuilderProvider(getter MockGetter) builder.ChainLinkJSONBuilderProvider {
@@ -96,7 +96,7 @@ func (suite *CreateJSONChainLinkTestSuite) TestMultiSignatureAccount() {
 					"option": "VOTE_OPTION_YES"
 				}
 			],
-			"memo": "desmos1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj",
+			"memo": "mage1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj",
 			"timeout_height": "0",
 			"extension_options": [],
 			"non_critical_extension_options": []

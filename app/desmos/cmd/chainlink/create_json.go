@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/builder"
-	chainlinktypes "github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/getter"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/builder"
+	chainlinktypes "github.com/mage-war/mage/app/mage/cmd/chainlink/getter"
 
 	"github.com/spf13/cobra"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/mage-war/mage/app"
 )
 
 // GetCreateChainLinkJSON returns the command allowing to generate the chain link JSON
@@ -21,10 +21,10 @@ func GetCreateChainLinkJSON(
 	return &cobra.Command{
 		Use:   "create-chain-link-json",
 		Short: "Start an interactive prompt to create a new chain link JSON object",
-		Long: `Start an interactive prompt to create a new chain link JSON object that can be used to later link your Desmos profile to another chain.
+		Long: `Start an interactive prompt to create a new chain link JSON object that can be used to later link your Mage profile to another chain.
 Once you have built the JSON object using this command, you can then run the following command to complete the linkage:
 
-desmos tx profiles link-chain [/path/to/json/file.json]
+mage tx profiles link-chain [/path/to/json/file.json]
 
 --- Single signature accounts ---
 Note that this command will ask you the mnemonic that should be used to generate the private key of the address you want to link.

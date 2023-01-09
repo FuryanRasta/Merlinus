@@ -3,15 +3,15 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	"github.com/mage-war/mage/testutil/profilestesting"
 
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
+	poststypes "github.com/mage-war/mage/x/posts/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/keeper"
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/x/reports/keeper"
+	"github.com/mage-war/mage/x/reports/types"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestsuite) TestMsgServer_CreateReport() {

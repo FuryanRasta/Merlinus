@@ -7,12 +7,12 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
-	profiletypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
-	reactionstypes "github.com/desmos-labs/desmos/v4/x/reactions/types"
-	relationshipstypes "github.com/desmos-labs/desmos/v4/x/relationships/types"
-	reportstypes "github.com/desmos-labs/desmos/v4/x/reports/types"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	poststypes "github.com/mage-war/mage/x/posts/types"
+	profiletypes "github.com/mage-war/mage/x/profiles/types"
+	reactionstypes "github.com/mage-war/mage/x/reactions/types"
+	relationshipstypes "github.com/mage-war/mage/x/relationships/types"
+	reportstypes "github.com/mage-war/mage/x/reports/types"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 )
 
 type Querier interface {

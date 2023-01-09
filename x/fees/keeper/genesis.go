@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/fees/types"
+	"github.com/mage-war/mage/x/fees/types"
 )
 
 // ExportGenesis returns the GenesisState associated with the given context

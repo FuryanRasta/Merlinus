@@ -3,12 +3,12 @@ package types_test
 import (
 	"testing"
 
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	profilestypes "github.com/mage-war/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/fees/types"
+	"github.com/mage-war/mage/x/fees/types"
 )
 
 func TestMinFee_Validate(t *testing.T) {

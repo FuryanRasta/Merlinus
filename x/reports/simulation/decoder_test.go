@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/simulation"
+	"github.com/mage-war/mage/x/reports/simulation"
 
 	"github.com/cosmos/cosmos-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
+	"github.com/mage-war/mage/app"
+	"github.com/mage-war/mage/x/reports/types"
 )
 
 func TestDecodeStore(t *testing.T) {

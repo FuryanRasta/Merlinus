@@ -6,8 +6,8 @@ slug: create-local
 ---
 
 # Create a local testnet
-:::warning Required Desmos executables  
-You need to [install `desmos`](02-install.md) before going further.  
+:::warning Required Mage executables  
+You need to [install `mage`](02-install.md) before going further.  
 :::
 
 There are two types of local testnets:
@@ -21,18 +21,18 @@ To create a single node local testnet, run the following commands:
 
 1. Create a local key. Replace `<your-key-name>` with whatever name you prefer.
    ```bash 
-   desmos keys add <your-key-name>
+   mage keys add <your-key-name>
    ```
 
    You will be required to input a password. Please make sure you use one that you will remember later. You should now see an output like
 
    ```bash
-   $ desmos keys add jack --dry-run
+   $ mage keys add jack --dry-run
    
    - name: jack
      type: local
-     address: desmos1qdv08q76fmfwwzrxcqs78z6pzfxe88cgc5a3tk
-     pubkey: desmospub1addwnpepq2j9a35spphh6q529y2thg8tjw9l2c32hck98fnmu99sxpw9a9aegugm6xs
+     address: mage1qdv08q76fmfwwzrxcqs78z6pzfxe88cgc5a3tk
+     pubkey: magepub1addwnpepq2j9a35spphh6q529y2thg8tjw9l2c32hck98fnmu99sxpw9a9aegugm6xs
      mnemonic: ""
      threshold: 0
      pubkeys: []
@@ -48,10 +48,10 @@ To create a single node local testnet, run the following commands:
    
 2. Initialize the testnet
    ```bash
-   desmos init testnet --chain-id testnet
-   desmos add-genesis-account <your-key-name> 100000000000stake
-   desmos gentx <your-key-name> 1000000000stake --chain-id testnet
-   desmos collect-gentxs
+   mage init testnet --chain-id testnet
+   mage add-genesis-account <your-key-name> 100000000000stake
+   mage gentx <your-key-name> 1000000000stake --chain-id testnet
+   mage collect-gentxs
    ``` 
    
    During the procedure you will be asked to input the same key password you have set inside point 1. 
@@ -59,7 +59,7 @@ To create a single node local testnet, run the following commands:
 3. Start the testnet.  
    Once you have completed all the steps, you are ready to start your local testnet by running: 
    ```bash
-   desmos start
+   mage start
    ```
 
 ## Creating a multi node testnet 
@@ -69,15 +69,15 @@ To create a local multi node testnet, you can simply run the following command:
 make localnet-start
 ```
 
-This command creates a 4-node network using the `desmoslabs/desmosnode` image. The ports for each node are found in this
+This command creates a 4-node network using the `desmoslabs/magenode` image. The ports for each node are found in this
 table:
 
 | Node ID       | P2P Port | RPC Port |
 |---------------|----------|----------|
-| `desmosnode0` | `26656`  | `26657`  |
-| `desmosnode1` | `26659`  | `26660`  |
-| `desmosnode2` | `26661`  | `26662`  |
-| `desmosnode3` | `26663`  | `26664`  |
+| `magenode0` | `26656`  | `26657`  |
+| `magenode1` | `26659`  | `26660`  |
+| `magenode2` | `26661`  | `26662`  |
+| `magenode3` | `26663`  | `26664`  |
 
 To update the binary, just rebuild it and restart the nodes:
 
@@ -87,67 +87,67 @@ make build-linux localnet-start
 
 #### Configuration
 
-The `make localnet-start` creates files for a 4-node testnet in `./build` by calling the `desmos testnet` command. This outputs a handful of files in the `./build` directory:
+The `make localnet-start` creates files for a 4-node testnet in `./build` by calling the `mage testnet` command. This outputs a handful of files in the `./build` directory:
 
 ```bash
 $ tree -L 2 build/
 build/
-├── desmos
+├── mage
 ├── gentxs
 │   ├── node0.json
 │   ├── node1.json
 │   ├── node2.json
 │   └── node3.json
 ├── node0
-│   ├── desmos
+│   ├── mage
 │   │   ├── key_seed.json
 │   │   └── keys
-│   └── desmos
-│       ├── ${LOG:-desmos.log}
+│   └── mage
+│       ├── ${LOG:-mage.log}
 │       ├── config
 │       └── data
 ├── node1
-│   ├── desmos
+│   ├── mage
 │   │   └── key_seed.json
-│   └── desmos
-│       ├── ${LOG:-desmos.log}
+│   └── mage
+│       ├── ${LOG:-mage.log}
 │       ├── config
 │       └── data
 ├── node2
-│   ├── desmos
+│   ├── mage
 │   │   └── key_seed.json
-│   └── desmos
-│       ├── ${LOG:-desmos.log}
+│   └── mage
+│       ├── ${LOG:-mage.log}
 │       ├── config
 │       └── data
 └── node3
-    ├── desmos
+    ├── mage
     │   └── key_seed.json
-    └── desmos
-        ├── ${LOG:-desmos.log}
+    └── mage
+        ├── ${LOG:-mage.log}
         ├── config
         └── data
 ```
 
-Each `./build/nodeN` directory is mounted to the `/desmos` directory in each container.
+Each `./build/nodeN` directory is mounted to the `/mage` directory in each container.
 
 #### Logging
 
-Logs are saved under each `./build/nodeN/desmos/desmos.log`. You can also watch logs directly via Docker, for example:
+Logs are saved under each `./build/nodeN/mage/mage.log`. You can also watch logs directly via Docker, for example:
 
 ```
-docker logs -f desmosnode0
+docker logs -f magenode0
 ```
 
 #### Keys & Accounts
 
-To interact with `desmos` and start querying state or creating txs, you use the
-`desmos` directory of any given node as your `home`, for example:
+To interact with `mage` and start querying state or creating txs, you use the
+`mage` directory of any given node as your `home`, for example:
 
 ```bash
-desmos keys list --home ./build/node0/desmos
+mage keys list --home ./build/node0/mage
 ```
 
 Now that accounts exists, you may create new accounts and send those accounts funds!
 
-**Note**: Each node's seed is located at `./build/nodeN/desmos/key_seed.json` and can be restored to the CLI using the `desmos keys add --restore` command
+**Note**: Each node's seed is located at `./build/nodeN/mage/key_seed.json` and can be restored to the CLI using the `mage keys add --restore` command

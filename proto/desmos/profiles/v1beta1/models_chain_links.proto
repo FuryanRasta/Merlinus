@@ -1,12 +1,12 @@
 syntax = "proto3";
-package desmos.profiles.v1beta1;
+package mage.profiles.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
 import "google/protobuf/timestamp.proto";
 import "cosmos_proto/cosmos.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/profiles/legacy/v4/types";
+option go_package = "github.com/mage-war/mage/x/profiles/legacy/v4/types";
 
 // ChainLink contains the data representing either an inter- or cross- chain
 // link
@@ -19,7 +19,7 @@ message ChainLink {
   string user = 1 [ (gogoproto.moretags) = "yaml:\"user\"" ];
 
   // Address contains the data of the external chain address to be connected
-  // with the Desmos profile
+  // with the Mage profile
   google.protobuf.Any address = 2 [
     (gogoproto.moretags) = "yaml:\"address\"",
     (cosmos_proto.accepts_interface) = "AddressData"

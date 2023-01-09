@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  desmosnode0:
-    container_name: desmosnode0
+  magenode0:
+    container_name: magenode0
     image: "desmoslabs/desmos-cosmovisor:v3.2.0"
     command: "start --x-crisis-skip-assert-invariants"
     ports:
@@ -12,13 +12,13 @@ services:
     environment:
       - ID=0
     volumes:
-      - ./../../build:/desmos:Z
+      - ./../../build:/mage:Z
     networks:
       devnet:
         ipv4_address: 192.168.10.2
 
-  desmosnode1:
-    container_name: desmosnode1
+  magenode1:
+    container_name: magenode1
     image: "desmoslabs/desmos-cosmovisor:v3.2.0"
     command: "start --x-crisis-skip-assert-invariants"
     ports:
@@ -28,13 +28,13 @@ services:
     environment:
       - ID=1
     volumes:
-      - ./../../build:/desmos:Z
+      - ./../../build:/mage:Z
     networks:
       devnet:
         ipv4_address: 192.168.10.3
 
-  desmosnode2:
-    container_name: desmosnode2
+  magenode2:
+    container_name: magenode2
     image: "desmoslabs/desmos-cosmovisor:v3.2.0"
     command: "start --x-crisis-skip-assert-invariants"
     ports:
@@ -44,13 +44,13 @@ services:
     environment:
       - ID=2
     volumes:
-      - ./../../build:/desmos:Z
+      - ./../../build:/mage:Z
     networks:
       devnet:
         ipv4_address: 192.168.10.4
 
-  desmosnode3:
-    container_name: desmosnode3
+  magenode3:
+    container_name: magenode3
     image: "desmoslabs/desmos-cosmovisor:v3.2.0"
     command: "start --x-crisis-skip-assert-invariants"
     ports:
@@ -60,7 +60,7 @@ services:
     environment:
       - ID=3
     volumes:
-      - ./../../build:/desmos:Z
+      - ./../../build:/mage:Z
     networks:
       devnet:
         ipv4_address: 192.168.10.5

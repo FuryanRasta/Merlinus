@@ -8,7 +8,7 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/desmos-labs/desmos/v4/app/upgrades"
+	"github.com/mage-war/mage/app/upgrades"
 )
 
 var (
@@ -41,22 +41,22 @@ func (u *Upgrade) Handler() upgradetypes.UpgradeHandler {
 	return func(ctx sdk.Context, plan upgradetypes.Plan, fromVM module.VersionMap) (module.VersionMap, error) {
 		// Set the coin metadata
 		u.bk.SetDenomMetaData(ctx, banktypes.Metadata{
-			Description: "The token of Morpheus Apollo",
+			Description: "The token of Ghost",
 			DenomUnits: []*banktypes.DenomUnit{
 				{
-					Denom:    "udaric",
+					Denom:    "ughost",
 					Exponent: 0,
 					Aliases:  nil,
 				},
 				{
-					Denom:    "daric",
+					Denom:    "ghost",
 					Exponent: 6,
-					Aliases:  []string{"Daric"},
+					Aliases:  []string{"Ghost"},
 				},
 			},
-			Base:    "udaric",
-			Display: "daric",
-			Name:    "Daric",
+			Base:    "ughost",
+			Display: "ghost",
+			Name:    "Ghost",
 			Symbol:  "",
 		})
 

@@ -9,7 +9,7 @@ args = sys.argv[1:]
 
 # Get the args
 build_dir = args[0]
-genesis_file = f"{build_dir}/node0/desmos/config/genesis.json"
+genesis_file = f"{build_dir}/node0/mage/config/genesis.json"
 
 genesis_url = args[2]
 chain_state_file = f"{build_dir}/state.json"
@@ -50,9 +50,9 @@ with open(chain_state_file, 'r') as chain_state_f, open(genesis_file, 'r') as ge
     # -------------------------------
     # --- Update the bank state
     modules_addresses = [
-        'desmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8n8fv78',
-        'desmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3prylw0',
-        'desmos1tygms3xhhs3yv487phx3dw4a95jn7t7l4rcwcm',
+        'mage1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8n8fv78',
+        'mage1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3prylw0',
+        'mage1tygms3xhhs3yv487phx3dw4a95jn7t7l4rcwcm',
     ]
 
     genesis['app_state']['bank']['supply'] = []
@@ -71,7 +71,7 @@ with open(chain_state_file, 'r') as chain_state_f, open(genesis_file, 'r') as ge
     # x/gov
     genesis['app_state']['gov']['deposit_params']['max_deposit_period'] = '120s'
     genesis['app_state']['gov']['voting_params']['voting_period'] = '120s'
-    genesis['app_state']['gov']['deposit_params']['min_deposit'] = [{'amount': '10000000', 'denom': 'udaric'}]
+    genesis['app_state']['gov']['deposit_params']['min_deposit'] = [{'amount': '10000000', 'denom': 'ughost'}]
 
     # -------------------------------
     # --- Copy modules state over
@@ -91,11 +91,11 @@ with open(chain_state_file, 'r') as chain_state_f, open(genesis_file, 'r') as ge
     # --- Write the file
 
     out.write(json.dumps(genesis))
-    os.system(f"sed -i 's/\"stake\"/\"udaric\"/g' {output_file}")
-    os.system(f"sed -i 's/\"udsm\"/\"udaric\"/g' {output_file}")
+    os.system(f"sed -i 's/\"stake\"/\"ughost\"/g' {output_file}")
+    os.system(f"sed -i 's/\"umage\"/\"ughost\"/g' {output_file}")
 
 nodes_amount = args[1]
 for i in range(0, int(nodes_amount)):
-    genesis_path = f"{build_dir}/node{i}/desmos/config/genesis.json"
+    genesis_path = f"{build_dir}/node{i}/mage/config/genesis.json"
     with open(genesis_path, 'w') as file:
         os.system(f"cp {output_file} {genesis_path}")

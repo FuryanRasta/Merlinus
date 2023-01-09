@@ -10,10 +10,10 @@ import (
 )
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgCreateRelationship{}, "desmos/MsgCreateRelationship", nil)
-	cdc.RegisterConcrete(&MsgDeleteRelationship{}, "desmos/MsgDeleteRelationship", nil)
-	cdc.RegisterConcrete(&MsgBlockUser{}, "desmos/MsgBlockUser", nil)
-	cdc.RegisterConcrete(&MsgUnblockUser{}, "desmos/MsgUnblockUser", nil)
+	cdc.RegisterConcrete(&MsgCreateRelationship{}, "mage/MsgCreateRelationship", nil)
+	cdc.RegisterConcrete(&MsgDeleteRelationship{}, "mage/MsgDeleteRelationship", nil)
+	cdc.RegisterConcrete(&MsgBlockUser{}, "mage/MsgBlockUser", nil)
+	cdc.RegisterConcrete(&MsgUnblockUser{}, "mage/MsgUnblockUser", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

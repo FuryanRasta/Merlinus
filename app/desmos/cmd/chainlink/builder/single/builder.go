@@ -7,14 +7,14 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/getter"
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/types"
-	"github.com/desmos-labs/desmos/v4/x/profiles/client/utils"
-	profilestypes "github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/getter"
+	"github.com/mage-war/mage/app/mage/cmd/chainlink/types"
+	"github.com/mage-war/mage/x/profiles/client/utils"
+	profilestypes "github.com/mage-war/mage/x/profiles/types"
 )
 
 const (
-	KeyName = "desmos_chain_link_account"
+	KeyName = "mage_chain_link_account"
 )
 
 // AccountChainLinkJSONBuilder implements the ChainLinkJSONBuilder for single signature accounts

@@ -3,7 +3,7 @@ package simtesting
 import (
 	"math/rand"
 
-	feeskeeper "github.com/desmos-labs/desmos/v4/x/fees/keeper"
+	feeskeeper "github.com/mage-war/mage/x/fees/keeper"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 

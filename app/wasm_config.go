@@ -5,43 +5,43 @@ import (
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	wasmdesmos "github.com/desmos-labs/desmos/v4/cosmwasm"
-	postskeeper "github.com/desmos-labs/desmos/v4/x/posts/keeper"
-	postswasm "github.com/desmos-labs/desmos/v4/x/posts/wasm"
-	profileskeeper "github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	profileswasm "github.com/desmos-labs/desmos/v4/x/profiles/wasm"
-	reactionskeeper "github.com/desmos-labs/desmos/v4/x/reactions/keeper"
-	reactionswasm "github.com/desmos-labs/desmos/v4/x/reactions/wasm"
-	relationshipskeeper "github.com/desmos-labs/desmos/v4/x/relationships/keeper"
-	relationshipswasm "github.com/desmos-labs/desmos/v4/x/relationships/wasm"
-	reportskeeper "github.com/desmos-labs/desmos/v4/x/reports/keeper"
-	reportswasm "github.com/desmos-labs/desmos/v4/x/reports/wasm"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspaceswasm "github.com/desmos-labs/desmos/v4/x/subspaces/wasm"
+	wasmmage "github.com/mage-war/mage/cosmwasm"
+	postskeeper "github.com/mage-war/mage/x/posts/keeper"
+	postswasm "github.com/mage-war/mage/x/posts/wasm"
+	profileskeeper "github.com/mage-war/mage/x/profiles/keeper"
+	profileswasm "github.com/mage-war/mage/x/profiles/wasm"
+	reactionskeeper "github.com/mage-war/mage/x/reactions/keeper"
+	reactionswasm "github.com/mage-war/mage/x/reactions/wasm"
+	relationshipskeeper "github.com/mage-war/mage/x/relationships/keeper"
+	relationshipswasm "github.com/mage-war/mage/x/relationships/wasm"
+	reportskeeper "github.com/mage-war/mage/x/reports/keeper"
+	reportswasm "github.com/mage-war/mage/x/reports/wasm"
+	subspaceskeeper "github.com/mage-war/mage/x/subspaces/keeper"
+	subspaceswasm "github.com/mage-war/mage/x/subspaces/wasm"
 )
 
 const (
-	// DefaultDesmosInstanceCost is how much SDK gas we charge each time we load a WASM instance
-	DefaultDesmosInstanceCost uint64 = 60_000
-	// DefaultDesmosCompileCost is how much SDK gas is charged *per byte* for compiling WASM code
-	DefaultDesmosCompileCost uint64 = 2
+	// DefaultMageInstanceCost is how much SDK gas we charge each time we load a WASM instance
+	DefaultMageInstanceCost uint64 = 60_000
+	// DefaultMageCompileCost is how much SDK gas is charged *per byte* for compiling WASM code
+	DefaultMageCompileCost uint64 = 2
 )
 
-// DesmosWasmGasRegister is defaults plus a custom compile amount
-func DesmosWasmGasRegister() wasmkeeper.WasmGasRegisterConfig {
+// MageWasmGasRegister is defaults plus a custom compile amount
+func MageWasmGasRegister() wasmkeeper.WasmGasRegisterConfig {
 	gasConfig := wasmkeeper.DefaultGasRegisterConfig()
-	gasConfig.InstanceCost = DefaultDesmosInstanceCost
-	gasConfig.CompileCost = DefaultDesmosCompileCost
+	gasConfig.InstanceCost = DefaultMageInstanceCost
+	gasConfig.CompileCost = DefaultMageCompileCost
 
 	return gasConfig
 }
 
-func NewDesmosWasmGasRegister() wasmkeeper.WasmGasRegister {
-	return wasmkeeper.NewWasmGasRegister(DesmosWasmGasRegister())
+func NewMageWasmGasRegister() wasmkeeper.WasmGasRegister {
+	return wasmkeeper.NewWasmGasRegister(MageWasmGasRegister())
 }
 
-// NewDesmosCustomQueryPlugin initialize the custom querier to handle desmos queries for contracts
-func NewDesmosCustomQueryPlugin(
+// NewMageCustomQueryPlugin initialize the custom querier to handle mage queries for contracts
+func NewMageCustomQueryPlugin(
 	cdc codec.Codec,
 	profilesKeeper profileskeeper.Keeper,
 	subspacesKeeper subspaceskeeper.Keeper,
@@ -50,34 +50,34 @@ func NewDesmosCustomQueryPlugin(
 	reportsKeeper reportskeeper.Keeper,
 	reactionsKeeper reactionskeeper.Keeper,
 ) wasm.QueryPlugins {
-	queriers := map[string]wasmdesmos.Querier{
-		wasmdesmos.QueryRouteProfiles:      profileswasm.NewProfilesWasmQuerier(profilesKeeper, cdc),
-		wasmdesmos.QueryRouteSubspaces:     subspaceswasm.NewSubspacesWasmQuerier(subspacesKeeper, cdc),
-		wasmdesmos.QueryRouteRelationships: relationshipswasm.NewRelationshipsWasmQuerier(relationshipsKeeper, cdc),
-		wasmdesmos.QueryRoutePosts:         postswasm.NewPostsWasmQuerier(postsKeeper, cdc),
-		wasmdesmos.QueryRouteReports:       reportswasm.NewReportsWasmQuerier(reportsKeeper, cdc),
-		wasmdesmos.QueryRouteReactions:     reactionswasm.NewReactionsWasmQuerier(reactionsKeeper, cdc),
+	queriers := map[string]wasmmage.Querier{
+		wasmmage.QueryRouteProfiles:      profileswasm.NewProfilesWasmQuerier(profilesKeeper, cdc),
+		wasmmage.QueryRouteSubspaces:     subspaceswasm.NewSubspacesWasmQuerier(subspacesKeeper, cdc),
+		wasmmage.QueryRouteRelationships: relationshipswasm.NewRelationshipsWasmQuerier(relationshipsKeeper, cdc),
+		wasmmage.QueryRoutePosts:         postswasm.NewPostsWasmQuerier(postsKeeper, cdc),
+		wasmmage.QueryRouteReports:       reportswasm.NewReportsWasmQuerier(reportsKeeper, cdc),
+		wasmmage.QueryRouteReactions:     reactionswasm.NewReactionsWasmQuerier(reactionsKeeper, cdc),
 		// add other modules querier here
 	}
 
-	querier := wasmdesmos.NewQuerier(queriers)
+	querier := wasmmage.NewQuerier(queriers)
 
 	return wasm.QueryPlugins{
 		Custom: querier.QueryCustom,
 	}
 }
 
-// NewDesmosCustomMessageEncoder initialize the custom message encoder to desmos app for contracts
-func NewDesmosCustomMessageEncoder(cdc codec.Codec) wasm.MessageEncoders {
-	// Initialization of custom Desmos messages for contracts
-	parserRouter := wasmdesmos.NewParserRouter()
-	parsers := map[string]wasmdesmos.MsgParserInterface{
-		wasmdesmos.WasmMsgParserRouteProfiles:      profileswasm.NewWasmMsgParser(cdc),
-		wasmdesmos.WasmMsgParserRouteSubspaces:     subspaceswasm.NewWasmMsgParser(cdc),
-		wasmdesmos.WasmMsgParserRouteRelationships: relationshipswasm.NewWasmMsgParser(cdc),
-		wasmdesmos.WasmMsgParserRoutePosts:         postswasm.NewWasmMsgParser(cdc),
-		wasmdesmos.WasmMsgParserRouteReports:       reportswasm.NewWasmMsgParser(cdc),
-		wasmdesmos.WasmMsgParserRouteReactions:     reactionswasm.NewWasmMsgParser(cdc),
+// NewMageCustomMessageEncoder initialize the custom message encoder to mage app for contracts
+func NewMageCustomMessageEncoder(cdc codec.Codec) wasm.MessageEncoders {
+	// Initialization of custom Mage messages for contracts
+	parserRouter := wasmmage.NewParserRouter()
+	parsers := map[string]wasmmage.MsgParserInterface{
+		wasmmage.WasmMsgParserRouteProfiles:      profileswasm.NewWasmMsgParser(cdc),
+		wasmmage.WasmMsgParserRouteSubspaces:     subspaceswasm.NewWasmMsgParser(cdc),
+		wasmmage.WasmMsgParserRouteRelationships: relationshipswasm.NewWasmMsgParser(cdc),
+		wasmmage.WasmMsgParserRoutePosts:         postswasm.NewWasmMsgParser(cdc),
+		wasmmage.WasmMsgParserRouteReports:       reportswasm.NewWasmMsgParser(cdc),
+		wasmmage.WasmMsgParserRouteReactions:     reactionswasm.NewWasmMsgParser(cdc),
 		// add other modules parsers here
 	}
 

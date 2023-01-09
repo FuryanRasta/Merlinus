@@ -13,9 +13,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/app"
+	"github.com/mage-war/mage/x/subspaces/keeper"
+	"github.com/mage-war/mage/x/subspaces/types"
 )
 
 func buildCreateSubspaceRequest(cdc codec.Codec, msg sdk.Msg) json.RawMessage {

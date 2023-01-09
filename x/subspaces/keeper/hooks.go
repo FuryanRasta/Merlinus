@@ -5,7 +5,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/x/subspaces/types"
 )
 
 // Implements SubspacesHooks interface

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/reactions/types"
+	"github.com/mage-war/mage/x/reactions/types"
 )
 
 func TestReaction_Validate(t *testing.T) {

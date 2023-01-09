@@ -1,5 +1,5 @@
 syntax = "proto3";
-package desmos.relationships.v1;
+package mage.relationships.v1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -7,9 +7,9 @@ import "google/protobuf/any.proto";
 import "cosmos_proto/cosmos.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-import "desmos/relationships/v1/models.proto";
+import "mage/relationships/v1/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/relationships/types";
+option go_package = "github.com/mage-war/mage/x/relationships/types";
 
 // Query defines the gRPC querier service.
 service Query {
@@ -17,13 +17,13 @@ service Query {
   // Relationships queries all relationships present inside a specific subspace
   rpc Relationships(QueryRelationshipsRequest)
       returns (QueryRelationshipsResponse) {
-    option (google.api.http).get = "/desmos/relationships/v1/relationships";
+    option (google.api.http).get = "/mage/relationships/v1/relationships";
   }
 
   // Blocks queries the blocks for the given user, if provided.
   // Otherwise, it queries all the stored blocks.
   rpc Blocks(QueryBlocksRequest) returns (QueryBlocksResponse) {
-    option (google.api.http).get = "/desmos/relationships/v1/blocks";
+    option (google.api.http).get = "/mage/relationships/v1/blocks";
   }
 }
 
@@ -52,7 +52,7 @@ message QueryRelationshipsRequest {
 // QueryRelationshipsResponse is the response type for the
 // Query/Relationships RPC method.
 message QueryRelationshipsResponse {
-  repeated desmos.relationships.v1.Relationship relationships = 1
+  repeated mage.relationships.v1.Relationship relationships = 1
       [ (gogoproto.nullable) = false ];
   cosmos.base.query.v1beta1.PageResponse pagination = 2;
 }
@@ -82,7 +82,7 @@ message QueryBlocksRequest {
 // QueryBlocksResponse is the response type for the Query/Blocks RPC
 // method.
 message QueryBlocksResponse {
-  repeated desmos.relationships.v1.UserBlock blocks = 1
+  repeated mage.relationships.v1.UserBlock blocks = 1
       [ (gogoproto.nullable) = false ];
   cosmos.base.query.v1beta1.PageResponse pagination = 2;
 }

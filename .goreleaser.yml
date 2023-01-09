@@ -1,10 +1,10 @@
 ---
-project_name: desmos
+project_name: mage
 
 release:
   github:
-    owner: desmos-labs
-    name: desmos
+    owner: mage-war
+    name: mage
 
 builds:
   - skip: true

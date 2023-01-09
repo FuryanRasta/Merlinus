@@ -16,10 +16,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/desmos-labs/desmos/v4/x/supply/client/cli"
-	"github.com/desmos-labs/desmos/v4/x/supply/client/rest"
-	"github.com/desmos-labs/desmos/v4/x/supply/keeper"
-	"github.com/desmos-labs/desmos/v4/x/supply/types"
+	"github.com/mage-war/mage/x/supply/client/cli"
+	"github.com/mage-war/mage/x/supply/client/rest"
+	"github.com/mage-war/mage/x/supply/keeper"
+	"github.com/mage-war/mage/x/supply/types"
 )
 
 var (

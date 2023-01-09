@@ -5,10 +5,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	subspacestypes "github.com/mage-war/mage/x/subspaces/types"
 
-	"github.com/desmos-labs/desmos/v4/x/relationships/keeper"
-	"github.com/desmos-labs/desmos/v4/x/relationships/types"
+	"github.com/mage-war/mage/x/relationships/keeper"
+	"github.com/mage-war/mage/x/relationships/types"
 )
 
 func (suite *KeeperTestSuite) TestMsgServer_CreateRelationship() {

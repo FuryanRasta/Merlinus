@@ -5,7 +5,7 @@ sidebar_label: Setup
 slug: setup
 ---
 
-# Become a Desmos validator
+# Become a Mage validator
 [Validators](01-overview.md) are responsible for committing new blocks to the blockchain through voting. 
 A validator's stake is slashed if they become unavailable or sign blocks at the same height. Please read about 
 [Sentry Node Architecture](07-validator-faq.md#how-can-validators-protect-themselves-from-denial-of-service-attacks) to protect your node from DDOS attacks and to ensure high-availability.
@@ -15,7 +15,7 @@ If you want to become a validator for the `mainnet`, you should [research securi
 :::
 
 ## 1. Run a fullnode
-To become a validator, you must first have `desmos` installed and be able to run a fullnode. You can
+To become a validator, you must first have `mage` installed and be able to run a fullnode. You can
 first [setup your fullnode](../03-fullnode/01-overview.mdx) if you haven't yet.
 
 The rest of the documentation will assume you have followed our instructions and have successfully set up a fullnode.
@@ -36,23 +36,23 @@ tokens that you will later delegate to your validator node, allowing him to prop
 wallet, please run:
 
 ```shell
-desmos keys add <key_name>
+mage keys add <key_name>
 ```
 
 **or** use the `--recover` flag if you already have a secret recovery phrase (mnemonic phase) you'd want to use:
 
 ```shell
-desmos keys add <key_name> --recover
+mage keys add <key_name> --recover
 ```
 
 **or** use the `--ledger` flag if you want to import your ledger wallet account.
 
 ```shell
-desmos keys add <key_name> --ledger
+mage keys add <key_name> --ledger
 ```
 
 :::note
-In order to use ledger you will need to use the Desmos app. You can download it from the ledger live store.
+In order to use ledger you will need to use the Mage app. You can download it from the ledger live store.
 :::
 
 :::caution Key name
@@ -72,31 +72,31 @@ run the following command:
 You can get your address by running:
 
 ```shell
-desmos keys show <key_name> -a
+mage keys show <key_name> -a
 ```
 
 To run a validator node you need to first get your current validator public key that was created when you
-ran `desmod init`. Your `desmosvalconspub` (Desmos Validator Consensus Pubkey) can be used to create a new validator by
+ran `desmod init`. Your `magevalconspub` (Mage Validator Consensus Pubkey) can be used to create a new validator by
 staking tokens. You can find your validator pubkey by running:
 
 ```bash
-desmos tendermint show-validator
+mage tendermint show-validator
 ```
 
 To create your validator, just use the following command:
 
 :::warning Don't use more staking token than you have!
 
-On Morpheus testnet, we are using `udaric` as the staking token and it will be the example below.
+On Morpheus testnet, we are using `ughost` as the staking token and it will be the example below.
 
-We are using `udsm` as the staking token on Mainnet.  
+We are using `umage` as the staking token on Mainnet.  
 :::
 
 #### Testnet: 
 ```bash
-desmos tx staking create-validator \
-  --amount=1000000udaric \
-  --pubkey=$(desmos tendermint show-validator) \
+mage tx staking create-validator \
+  --amount=1000000ughost \
+  --pubkey=$(mage tendermint show-validator) \
   --moniker="<Your moniker here>" \
   --chain-id=<chain_id> \
   --commission-rate="0.10" \
@@ -105,15 +105,15 @@ desmos tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-adjustment=1.2 \
-  --gas-prices="0.025udaric" \
+  --gas-prices="0.025ughost" \
   --from=<key_name>
 ```
 
 #### Mainnet:
 ```bash
-desmos tx staking create-validator \
-  --amount=1000000udsm \
-  --pubkey=$(desmos tendermint show-validator) \
+mage tx staking create-validator \
+  --amount=1000000umage \
+  --pubkey=$(mage tendermint show-validator) \
   --moniker="<Your moniker here>" \
   --chain-id=<chain_id> \
   --commission-rate="0.10" \
@@ -122,7 +122,7 @@ desmos tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-adjustment=1.2 \
-  --gas-prices="0.025udsm" \
+  --gas-prices="0.025umage" \
   --from=<key_name>
 ```
 
@@ -135,12 +135,12 @@ When specifying commission parameters, the `commission-max-change-rate` is used 
 :::
 
 :::tip
-`Min-self-delegation` is a strictly positive integer that represents the minimum amount of self-delegated staking token your validator must always have. A `min-self-delegation` of 1 means your validator will never have a self-delegation lower than `1udaric` (or `1udsm` in mainnet). A validator with a self delegation lower than this number will automatically be unbonded.
+`Min-self-delegation` is a strictly positive integer that represents the minimum amount of self-delegated staking token your validator must always have. A `min-self-delegation` of 1 means your validator will never have a self-delegation lower than `1ughost` (or `1umage` in mainnet). A validator with a self delegation lower than this number will automatically be unbonded.
 :::
 
 You can confirm that you are in the validator set by using a block explorer:
-- Testnet:  [Big Dipper](https://morpheus.desmos.network)
-- Mainnet: [Big Dipper](https://explorer.desmos.network).
+- Testnet:  [Big Dipper](https://morpheus.mage.network)
+- Mainnet: [Big Dipper](https://explorer.mage.network).
 
 ## 3. Edit the validator description
 You can edit your validator's public description. This info is to identify your validator, and will be relied on by delegators to decide which validators to stake to. Make sure to provide input for every flag below. If a flag is not included in the command the field will default to empty (`--moniker` defaults to the machine name) if the field has never been set or remain the same if it has been set in the past.
@@ -150,9 +150,9 @@ The <key_name> specifies which validator you are editing. If you choose to not i
 The `--identity` can be used as to verify identity with systems like Keybase or UPort. When using with Keybase `--identity` should be populated with a 16-digit string that is generated with a [keybase.io](https://keybase.io) account. It's a cryptographically secure method of verifying your identity across multiple online networks. The Keybase API allows some block explorers to retrieve your Keybase avatar. This is how you can add a logo to your validator profile.
 
 ```bash
-desmos tx staking edit-validator \
+mage tx staking edit-validator \
   --moniker="choose a moniker" \
-  --website="https://desmos.network" \
+  --website="https://mage.network" \
   --identity=6A0D65E29A4CBC8E \
   --details="To infinity and beyond!" \
   --commission-rate="0.10" \
@@ -171,24 +171,24 @@ __Note__: The `commission-rate` value must adhere to the following invariants:
 View the validator's information with this command:
 
 ```bash
-desmos query staking validator <account_desmos>
+mage query staking validator <account_mage>
 ```
 
 ## 4. Confirm your validator is running
 Your validator is active if the following command returns anything:
 
 ```bash
-desmos query tendermint-validator-set | grep $(desmos status 2>&1 | jq '.ValidatorInfo.PubKey.value')
+mage query tendermint-validator-set | grep $(mage status 2>&1 | jq '.ValidatorInfo.PubKey.value')
 ```
 
-When you query the node status with `desmos status`, it includes the validator pubkey in base64 encoding. If your node is an active validator, the validator pubkey will be shown when you query the validator set.
+When you query the node status with `mage status`, it includes the validator pubkey in base64 encoding. If your node is an active validator, the validator pubkey will be shown when you query the validator set.
 
-You should now see your validator in one of the Desmos explorers. You are looking for the `bech32` encoded `operator address` starts with `desmosvaloper`. It is another representation of your `<key_name>` that you have used to create this validator.
+You should now see your validator in one of the Mage explorers. You are looking for the `bech32` encoded `operator address` starts with `magevaloper`. It is another representation of your `<key_name>` that you have used to create this validator.
 
 To show the `operator address`, you can run
 
 ```bash
-desmos keys show <key_name> -a --bech val
+mage keys show <key_name> -a --bech val
 ```
 
 :::note Note 

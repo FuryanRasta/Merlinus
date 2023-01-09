@@ -8,18 +8,18 @@ import (
 
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 
-	v2 "github.com/desmos-labs/desmos/v4/x/subspaces/legacy/v2"
+	v2 "github.com/mage-war/mage/x/subspaces/legacy/v2"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/authz"
+	"github.com/mage-war/mage/x/subspaces/authz"
 
-	feeskeeper "github.com/desmos-labs/desmos/v4/x/fees/keeper"
+	feeskeeper "github.com/mage-war/mage/x/fees/keeper"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/simulation"
+	"github.com/mage-war/mage/x/subspaces/simulation"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/client/cli"
+	"github.com/mage-war/mage/x/subspaces/client/cli"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/mage-war/mage/x/subspaces/keeper"
+	"github.com/mage-war/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
