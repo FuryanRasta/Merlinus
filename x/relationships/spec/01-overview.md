@@ -7,9 +7,9 @@ slug: overview
 
 # `x/relationships`
 
-This document specifies the Relationships module of Desmos. 
+This document specifies the Relationships module of Mage. 
 
-The module allows Desmos users to establish relationships between them, and also to block misbehaving users from harassing them in the future.  
+The module allows Mage users to establish relationships between them, and also to block misbehaving users from harassing them in the future.  
 
 ## Contents
 1. **[Concepts](02-concepts.md)**

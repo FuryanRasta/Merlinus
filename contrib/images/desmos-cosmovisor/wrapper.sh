@@ -2,26 +2,26 @@
 
 BINARY=cosmovisor
 ID=${ID:-0}
-LOG=${LOG:-desmos.log}
+LOG=${LOG:-mage.log}
 
-export DESMOSDHOME="/desmos/node${ID}/desmos"
+export MAGEDHOME="/mage/node${ID}/mage"
 
 # Set environment variables
-export DAEMON_NAME=desmos
-export DAEMON_HOME="$DESMOSDHOME"
+export DAEMON_NAME=mage
+export DAEMON_HOME="$MAGEDHOME"
 export DAEMON_ALLOW_DOWNLOAD_BINARIES=true
 export DAEMON_RESTART_AFTER_UPGRADE=true
 
 # Setup Cosmovisor
-COSMOVISOR_GENESIS="$DESMOSDHOME/cosmovisor/genesis/bin"
+COSMOVISOR_GENESIS="$MAGEDHOME/cosmovisor/genesis/bin"
 if [ ! -d "$COSMOVISOR_GENESIS" ]; then
   mkdir -p $COSMOVISOR_GENESIS
-  cp $(which desmos) "$COSMOVISOR_GENESIS/desmos"
+  cp $(which mage) "$COSMOVISOR_GENESIS/mage"
 fi
 
 # Run the command
-if [ -d "$(dirname "${DESMOSDHOME}"/"${LOG}")" ]; then
-  "${BINARY}" "$@" --home "${DESMOSDHOME}" | tee "${DESMOSDHOME}/${LOG}"
+if [ -d "$(dirname "${MAGEDHOME}"/"${LOG}")" ]; then
+  "${BINARY}" "$@" --home "${MAGEDHOME}" | tee "${MAGEDHOME}/${LOG}"
 else
-  "${BINARY}" "$@" --home "${DESMOSDHOME}"
+  "${BINARY}" "$@" --home "${MAGEDHOME}"
 fi

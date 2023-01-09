@@ -3,7 +3,7 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/supply/types"
+	"github.com/warmage-sports/mage/x/supply/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryServer_Total() {

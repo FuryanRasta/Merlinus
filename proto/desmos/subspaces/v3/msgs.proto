@@ -1,10 +1,10 @@
 syntax = "proto3";
-package desmos.subspaces.v3;
+package mage.subspaces.v3;
 
 import "gogoproto/gogo.proto";
-import "desmos/subspaces/v3/models.proto";
+import "mage/subspaces/v3/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/subspaces/types";
+option go_package = "github.com/warmage-sports/mage/x/subspaces/types";
 
 // Msg defines subspaces Msg service.
 service Msg {

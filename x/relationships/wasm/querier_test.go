@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/relationships/types"
-	"github.com/desmos-labs/desmos/v4/x/relationships/wasm"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/warmage-sports/mage/x/relationships/wasm"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func (suite *TestSuite) TestProfilesWasmQuerier_QueryCustom() {

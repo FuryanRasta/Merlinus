@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/reports/types"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/reports/types"
+	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 // RegisterInvariants registers all posts invariants

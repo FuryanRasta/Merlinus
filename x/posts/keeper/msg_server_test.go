@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	"github.com/warmage-sports/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/posts/keeper"
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/posts/keeper"
+	"github.com/warmage-sports/mage/x/posts/types"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestsuite) TestMsgServer_CreatePost() {

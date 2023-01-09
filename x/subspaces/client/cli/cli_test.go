@@ -10,12 +10,12 @@ import (
 
 	authzcli "github.com/cosmos/cosmos-sdk/x/authz/client/cli"
 
-	poststypes "github.com/desmos-labs/desmos/v4/x/posts/types"
+	poststypes "github.com/warmage-sports/mage/x/posts/types"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/client/cli"
+	"github.com/warmage-sports/mage/x/subspaces/client/cli"
 
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
@@ -24,8 +24,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/testutil"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/testutil"
+	"github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func TestIntegrationTestSuite(t *testing.T) {

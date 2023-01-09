@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd/chainlink/types"
+	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
@@ -17,7 +17,7 @@ import (
 	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/warmage-sports/mage/app"
 )
 
 func TestCreateJSONChainLinkSuite(t *testing.T) {
@@ -41,7 +41,7 @@ func (suite *CreateJSONChainLinkTestSuite) SetupSuite() {
 	suite.Codec = encodingConfig.Marshaler
 	suite.LegacyAmino = encodingConfig.Amino
 	suite.ClientCtx = client.Context{}.WithOutput(os.Stdout).WithTxConfig(encodingConfig.TxConfig)
-	suite.Owner = "desmos1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj"
+	suite.Owner = "mage1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj"
 }
 
 func (suite *CreateJSONChainLinkTestSuite) TempFile() string {
@@ -98,7 +98,7 @@ func (mock MockGetter) GetFilename() (string, error) {
 
 // GetOwner implements ChainLinkReferenceGetter
 func (mock MockGetter) GetOwner() (string, error) {
-	return "desmos1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj", nil
+	return "mage1n8345tvzkg3jumkm859r2qz0v6xsc3henzddcj", nil
 }
 
 // GetMnemonic implements SingleSignatureAccountReferenceGetter

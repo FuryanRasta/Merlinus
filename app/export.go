@@ -18,7 +18,7 @@ import (
 
 // ExportAppStateAndValidators exports the state of the application for a genesis
 // file.
-func (app *DesmosApp) ExportAppStateAndValidators(
+func (app *MageApp) ExportAppStateAndValidators(
 	forZeroHeight bool, jailAllowedAddrs []string,
 ) (servertypes.ExportedApp, error) {
 
@@ -54,9 +54,14 @@ func (app *DesmosApp) ExportAppStateAndValidators(
 
 // prepare for fresh start at zero height
 // NOTE zero height genesis is a temporary feature which will be deprecated
+<<<<<<< HEAD
 //
 //	in favour of export at a block height
 func (app *DesmosApp) prepForZeroHeightGenesis(ctx sdk.Context, jailWhiteList []string) {
+=======
+//      in favour of export at a block height
+func (app *MageApp) prepForZeroHeightGenesis(ctx sdk.Context, jailWhiteList []string) {
+>>>>>>> 155ccacb (commit)
 	applyWhiteList := false
 
 	// Check if there is a whitelist

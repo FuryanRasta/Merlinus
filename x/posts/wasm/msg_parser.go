@@ -8,9 +8,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/desmos-labs/desmos/v4/cosmwasm"
-	"github.com/desmos-labs/desmos/v4/x/commons"
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	"github.com/warmage-sports/mage/cosmwasm"
+	"github.com/warmage-sports/mage/x/commons"
+	"github.com/warmage-sports/mage/x/posts/types"
 )
 
 var _ cosmwasm.MsgParserInterface = MsgsParser{}

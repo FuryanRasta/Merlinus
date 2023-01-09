@@ -1,27 +1,27 @@
 syntax = "proto3";
-package desmos.reactions.v1;
+package mage.reactions.v1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos_proto/cosmos.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-import "desmos/reactions/v1/models.proto";
+import "mage/reactions/v1/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/reactions/types";
+option go_package = "github.com/warmage-sports/mage/x/reactions/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Reactions allows to query the reactions for a given post
   rpc Reactions(QueryReactionsRequest) returns (QueryReactionsResponse) {
-    option (google.api.http).get = "/desmos/reactions/v1/subspaces/"
+    option (google.api.http).get = "/mage/reactions/v1/subspaces/"
                                    "{subspace_id}/posts/{post_id}/reactions";
   }
 
   // Reaction allows to query the reaction with the given id
   rpc Reaction(QueryReactionRequest) returns (QueryReactionResponse) {
     option (google.api.http).get =
-        "/desmos/reactions/v1/subspaces/{subspace_id}/posts/{post_id}/"
+        "/mage/reactions/v1/subspaces/{subspace_id}/posts/{post_id}/"
         "reactions/{reaction_id}";
   }
 
@@ -29,13 +29,13 @@ service Query {
   rpc RegisteredReactions(QueryRegisteredReactionsRequest)
       returns (QueryRegisteredReactionsResponse) {
     option (google.api.http).get =
-        "/desmos/reactions/v1/subspaces/{subspace_id}/registered-reactions";
+        "/mage/reactions/v1/subspaces/{subspace_id}/registered-reactions";
   }
   // RegisteredReaction allows to query the registered reaction of a subspace
   rpc RegisteredReaction(QueryRegisteredReactionRequest)
       returns (QueryRegisteredReactionResponse) {
     option (google.api.http).get =
-        "/desmos/reactions/v1/subspaces/{subspace_id}/registered-reactions/"
+        "/mage/reactions/v1/subspaces/{subspace_id}/registered-reactions/"
         "{reaction_id}";
   }
 
@@ -43,7 +43,7 @@ service Query {
   rpc ReactionsParams(QueryReactionsParamsRequest)
       returns (QueryReactionsParamsResponse) {
     option (google.api.http).get =
-        "/desmos/reactions/v1/subspaces/{subspace_id}/params";
+        "/mage/reactions/v1/subspaces/{subspace_id}/params";
   }
 }
 

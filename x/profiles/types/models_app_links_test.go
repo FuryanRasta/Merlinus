@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 func TestApplicationLink_Validate(t *testing.T) {

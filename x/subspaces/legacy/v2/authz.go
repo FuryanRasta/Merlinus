@@ -7,7 +7,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/x/authz"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 // TODO: Revisit this once we have proper gas fee framework.

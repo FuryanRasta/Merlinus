@@ -16,25 +16,25 @@ A user can query and interact with the `posts` module using the CLI.
 The `query` commands allow users to query the `posts` state.
 
 ```
-desmos query posts --help
+mage query posts --help
 ```
 
 #### post
 The `post` query command allows users to query a post with the given id inside a subspace with the given id.
 
 ```bash
-desmos query posts post [subspace-id] [post-id] [flags]
+mage query posts post [subspace-id] [post-id] [flags]
 ```
 
 Example:
 ```bash
-desmos query posts post 1 1
+mage query posts post 1 1
 ```
 
 Example output:
 ```yaml
 post:
-  author: desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
+  author: mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
   conversation_id: "0"
   creation_date: "2022-06-20T15:13:10.751262Z"
   entities:
@@ -59,13 +59,13 @@ post:
 The `posts` query command allows users to query all the posts for a given subspace id optionally specifying also a section id.
 
 ```bash
-desmos query posts posts [subspace-id] [[section-id]] [flags]
+mage query posts posts [subspace-id] [[section-id]] [flags]
 ```
 
 Examples:
 ```bash
-desmos query posts posts 1 --page=1 --limit=100
-desmos query posts posts 1 1 --page=1 --limit=100
+mage query posts posts 1 --page=1 --limit=100
+mage query posts posts 1 1 --page=1 --limit=100
 ```
 
 Example output:
@@ -74,7 +74,7 @@ pagination:
   next_key: null
   total: "0"
 posts:
-- author: desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
+- author: mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
   conversation_id: "0"
   creation_date: "2022-06-20T15:13:10.751262Z"
   entities:
@@ -93,7 +93,7 @@ posts:
   section_id: 1
   subspace_id: "1"
   text: This is my post text
-- author: desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
+- author: mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
   conversation_id: "0"
   creation_date: "2022-06-21T09:19:12.343428Z"
   entities:
@@ -119,19 +119,19 @@ The `attachments` query command allow users to query all the attachments for the
 given id.
 
 ```bash
-desmos query posts attachments [subspace-id] [post-id] [flags]
+mage query posts attachments [subspace-id] [post-id] [flags]
 ```
 
 Example:
 ```bash
-desmos query posts attachments 1 1 --page=1 --limit=100
+mage query posts attachments 1 1 --page=1 --limit=100
 ```
 
 Example output: 
 ```bash
 attachments:
 - content:
-    '@type': /desmos.posts.v2.media
+    '@type': /mage.posts.v2.media
     mime_type: image/png
     uri: ftp://user:password@example.com/image.png
   id: 1
@@ -148,13 +148,13 @@ The `answers` query command allows users to query all the answers for a given po
 It is also possible to specify an optional user.
 
 ```bash
-desmos query posts answers [subspace-id] [post-id] [poll-id] [[user]] [flags]
+mage query posts answers [subspace-id] [post-id] [poll-id] [[user]] [flags]
 ```
 
 Examples:
 ```bash
-desmos query posts answers 1 1 1
-desmos query posts answers 1 1 1 desmos1mc0mrx23aawryc6gztvdyrupph00yz8lk42v40 --page=1 --limit=100
+mage query posts answers 1 1 1
+mage query posts answers 1 1 1 mage1mc0mrx23aawryc6gztvdyrupph00yz8lk42v40 --page=1 --limit=100
 ```
 
 Examples output:
@@ -167,7 +167,7 @@ answers:
   post_id: "1"
   section_id: 0
   subspace_id: "1"
-  user: desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
+  user: mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3
 pagination:
   next_key: null
   total: "0"
@@ -177,12 +177,12 @@ pagination:
 The `params` query command allows users to get the currently set parameters. 
 
 ```bash 
-desmos query posts params [flags]
+mage query posts params [flags]
 ```
 
 Examples:
 ```bash
-desmos query posts params
+mage query posts params
 ```
 
 Example output:
@@ -198,13 +198,13 @@ A user can query the `posts` module gRPC endpoints.
 The `Post` endpoint allows users to query a post with the given id inside a subspace with the given id.
 
 ```bash
-desmos.posts.v2.Query/Post
+mage.posts.v2.Query/Post
 ```
 
 Example:
 ```bash
 grpcurl -plaintext \
--d '{"subspace_id":1, "post_id":1}' localhost:9090 desmos.posts.v2.Query/Post
+-d '{"subspace_id":1, "post_id":1}' localhost:9090 mage.posts.v2.Query/Post
 ```
 
 Example output:
@@ -225,7 +225,7 @@ Example output:
         }
       ]
     },
-    "author": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
+    "author": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
     "replySettings": "REPLY_SETTING_EVERYONE",
     "creationDate": "2022-06-20T15:13:10.751262Z",
     "lastEditedDate": "2022-06-21T15:04:05.722967Z"
@@ -237,13 +237,13 @@ Example output:
 The `SubspacePosts` endpoint allows users to query all the posts of the subspace with the given id.
 
 ```bash
-desmos.posts.v2.Query/SubspacePosts
+mage.posts.v2.Query/SubspacePosts
 ```
 
 Example:
 ```bash
 grpcurl -plaintext \
--d '{"subspace_id":1}' localhost:9090 desmos.posts.v2.Query/SubspacePosts
+-d '{"subspace_id":1}' localhost:9090 mage.posts.v2.Query/SubspacePosts
 ```
 
 Example output:
@@ -265,7 +265,7 @@ Example output:
           }
         ]
       },
-      "author": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
+      "author": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
       "replySettings": "REPLY_SETTING_EVERYONE",
       "creationDate": "2022-06-20T15:13:10.751262Z",
       "lastEditedDate": "2022-06-21T15:04:05.722967Z"
@@ -285,7 +285,7 @@ Example output:
           }
         ]
       },
-      "author": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
+      "author": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
       "replySettings": "REPLY_SETTING_EVERYONE",
       "creationDate": "2022-06-21T09:19:12.343428Z"
     }
@@ -301,13 +301,13 @@ Example output:
 The `SectionPosts` endpoint allows users to return all the posts associated with the section with the given id.
 
 ```bash
-desmos.posts.v2.Query/SectionPosts
+mage.posts.v2.Query/SectionPosts
 ```
 
 Example:
 ```bash
 grpcurl -plaintext \
--d '{"subspace_id":1, "section_id":1}' localhost:9090 desmos.posts.v2.Query/SectionPosts
+-d '{"subspace_id":1, "section_id":1}' localhost:9090 mage.posts.v2.Query/SectionPosts
 ```
 
 Example output:
@@ -329,7 +329,7 @@ Example output:
           }
         ]
       },
-      "author": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
+      "author": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
       "replySettings": "REPLY_SETTING_EVERYONE",
       "creationDate": "2022-06-20T15:13:10.751262Z",
       "lastEditedDate": "2022-06-21T15:04:05.722967Z"
@@ -349,7 +349,7 @@ Example output:
           }
         ]
       },
-      "author": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
+      "author": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3",
       "replySettings": "REPLY_SETTING_EVERYONE",
       "creationDate": "2022-06-21T09:19:12.343428Z"
     }
@@ -364,13 +364,13 @@ Example output:
 The `PostAttachments` endpoint allows users to query all the attachment associated with the post id given.
 
 ```bash
-desmos.posts.v2.Query/PostAttachments
+mage.posts.v2.Query/PostAttachments
 ```
 
 Example:
 ```bash
 grpcurl -plaintext \
--d '{"subspace_id":1, "post_id":1}' localhost:9090 desmos.posts.v2.Query/PostAttachments
+-d '{"subspace_id":1, "post_id":1}' localhost:9090 mage.posts.v2.Query/PostAttachments
 ```
 
 Example output:
@@ -381,13 +381,13 @@ Example output:
       "subspaceId": "1",
       "postId": "1",
       "id": 1,
-      "content": {"@type":"/desmos.posts.v2.media","mimeType":"image/png","uri":"ftp://user:password@example.com/image.png"}
+      "content": {"@type":"/mage.posts.v2.media","mimeType":"image/png","uri":"ftp://user:password@example.com/image.png"}
     },
     {
       "subspaceId": "1",
       "postId": "1",
       "id": 2,
-      "content": {"@type":"/desmos.posts.v2.poll","allowsAnswerEdits":true,"allowsMultipleAnswers":true,"endDate":"2025-01-01T12:00:00Z","providedAnswers":[{"text":"yes"},{"text":"no"}],"question":"A question"}
+      "content": {"@type":"/mage.posts.v2.poll","allowsAnswerEdits":true,"allowsMultipleAnswers":true,"endDate":"2025-01-01T12:00:00Z","providedAnswers":[{"text":"yes"},{"text":"no"}],"question":"A question"}
     }
   ],
   "pagination": {
@@ -402,15 +402,15 @@ The `PollAnswers` endpoint allows users to query al the poll answer associated w
 with the given post id.
 
 ```bash
-desmos.posts.v2.Query/PollAnswers
+mage.posts.v2.Query/PollAnswers
 ```
 
 Examples:
 ```bash
 grpcurl -plaintext \
--d '{"subspace_id":1, "post_id":1, "poll_id":2}' localhost:9090 desmos.posts.v2.Query/PollAnswers
+-d '{"subspace_id":1, "post_id":1, "poll_id":2}' localhost:9090 mage.posts.v2.Query/PollAnswers
 grpcurl -plaintext \
--d '{"subspace_id":1, "post_id":1, "poll_id":2, "user":"desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3"}' localhost:9090 desmos.posts.v2.Query/PollAnswers
+-d '{"subspace_id":1, "post_id":1, "poll_id":2, "user":"mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3"}' localhost:9090 mage.posts.v2.Query/PollAnswers
 ```
 
 Example output:
@@ -425,7 +425,7 @@ Example output:
         0,
         1
       ],
-      "user": "desmos1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3"
+      "user": "mage1rfv0f7mx7w9d3jv3h803u38vqym9ygg344asm3"
     }
   ],
   "pagination": {
@@ -439,12 +439,12 @@ Example output:
 The `Params` endpoint allows users to query the module's parameters.
 
 ```bash
-desmos.posts.v2.Query/Params
+mage.posts.v2.Query/Params
 ```
 
 Example:
 ```bash
-grpcurl -plaintext localhost:9090 desmos.posts.v2.Query/Params
+grpcurl -plaintext localhost:9090 mage.posts.v2.Query/Params
 ```
 
 Example output:
@@ -463,14 +463,14 @@ A user can query the `posts` module using REST endpoints.
 The `Post` endpoint allows users to query a post with the given id inside a subspace with the given id.
 
 ```
-/desmos/posts/v2/subspaces/{subspace_id}/posts/{post_id}
+/mage/posts/v2/subspaces/{subspace_id}/posts/{post_id}
 ```
 
 ### SubspacePosts
 The `SubspacePosts` endpoint allows users to query all the posts of the subspace with the given id.
 
 ```
-/desmos/posts/v2/subspaces/{subspace_id}/posts
+/mage/posts/v2/subspaces/{subspace_id}/posts
 ```
 
 ### SectionPosts
@@ -478,7 +478,7 @@ The `SectionPosts` endpoint allows users to return all the posts associated with
 to the subspace with the given id.
 
 ```
-/desmos/posts/v2/subspaces/{subspace_id}/sections/{section_id}/posts
+/mage/posts/v2/subspaces/{subspace_id}/sections/{section_id}/posts
 ```
 
 ### PostAttachments
@@ -486,7 +486,7 @@ The `PostAttachments` endpoint allows users to query all the attachment associat
 the subspace with the given id.
 
 ```
-/desmos/posts/v2/subspaces/{subspace_id}/posts/{post_id}/attachments
+/mage/posts/v2/subspaces/{subspace_id}/posts/{post_id}/attachments
 ```
 
 ### PollAnswers
@@ -494,12 +494,12 @@ The `PollAnswers` endpoint allows users to query al the poll answer associated w
 with the given post id inside the subspace with the given id.
 
 ```
-/desmos/posts/v2/subspaces/{subspace_id}/posts/{post_id}/polls/{poll_id}/answers
+/mage/posts/v2/subspaces/{subspace_id}/posts/{post_id}/polls/{poll_id}/answers
 ```
 
 ### Params
 The `Params` endpoint allows users to query the module's parameters.
 
 ```
-/desmos/posts/v2/params
+/mage/posts/v2/params
 ```

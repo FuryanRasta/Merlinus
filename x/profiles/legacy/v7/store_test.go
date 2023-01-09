@@ -3,7 +3,7 @@ package v7_test
 import (
 	"testing"
 
-	v7 "github.com/desmos-labs/desmos/v4/x/profiles/legacy/v7"
+	v7 "github.com/warmage-sports/mage/x/profiles/legacy/v7"
 
 	"github.com/cosmos/cosmos-sdk/store"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -17,8 +17,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/app"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 func buildContext(

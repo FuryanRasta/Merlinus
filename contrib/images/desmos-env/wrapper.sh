@@ -1,11 +1,11 @@
 #!/usr/bin/env sh
 
-BINARY=/desmos/${BINARY:-desmos}
+BINARY=/mage/${BINARY:-mage}
 ID=${ID:-0}
-LOG=${LOG:-desmos.log}
+LOG=${LOG:-mage.log}
 
 if ! [ -f "${BINARY}" ]; then
-	echo "The binary $(basename "${BINARY}") cannot be found. Please add the binary to the shared folder. Please use the BINARY environment variable if the name of the binary is not 'desmos'"
+	echo "The binary $(basename "${BINARY}") cannot be found. Please add the binary to the shared folder. Please use the BINARY environment variable if the name of the binary is not 'mage'"
 	exit 1
 fi
 
@@ -16,10 +16,10 @@ if [ -z "${BINARY_CHECK}" ]; then
 	exit 1
 fi
 
-export DESMOSDHOME="/desmos/node${ID}/desmos"
+export MAGEDHOME="/mage/node${ID}/mage"
 
-if [ -d "$(dirname "${DESMOSDHOME}"/"${LOG}")" ]; then
-  "${BINARY}" --home "${DESMOSDHOME}" "$@" | tee "${DESMOSDHOME}/${LOG}"
+if [ -d "$(dirname "${MAGEDHOME}"/"${LOG}")" ]; then
+  "${BINARY}" --home "${MAGEDHOME}" "$@" | tee "${MAGEDHOME}/${LOG}"
 else
-  "${BINARY}" --home "${DESMOSDHOME}" "$@"
+  "${BINARY}" --home "${MAGEDHOME}" "$@"
 fi

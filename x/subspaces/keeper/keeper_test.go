@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	"github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/x/subspaces/keeper"
+	"github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func TestKeeper_SetHooks(t *testing.T) {

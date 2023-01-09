@@ -1,13 +1,13 @@
 syntax = "proto3";
-package desmos.posts.v2;
+package mage.posts.v2;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-import "desmos/posts/v2/models.proto";
+import "mage/posts/v2/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/posts/types";
+option go_package = "github.com/warmage-sports/mage/x/posts/types";
 
 // Query defines the gRPC querier service
 service Query {
@@ -15,39 +15,39 @@ service Query {
   rpc SubspacePosts(QuerySubspacePostsRequest)
       returns (QuerySubspacePostsResponse) {
     option (google.api.http).get =
-        "/desmos/posts/v2/subspaces/{subspace_id}/posts";
+        "/mage/posts/v2/subspaces/{subspace_id}/posts";
   }
 
   // SectionPosts queries all the posts inside a given section
   rpc SectionPosts(QuerySectionPostsRequest)
       returns (QuerySectionPostsResponse) {
     option (google.api.http).get =
-        "/desmos/posts/v2/subspaces/{subspace_id}/sections/{section_id}/posts";
+        "/mage/posts/v2/subspaces/{subspace_id}/sections/{section_id}/posts";
   }
 
   // Post queries for a single post inside a given subspace
   rpc Post(QueryPostRequest) returns (QueryPostResponse) {
     option (google.api.http).get =
-        "/desmos/posts/v2/subspaces/{subspace_id}/posts/{post_id}";
+        "/mage/posts/v2/subspaces/{subspace_id}/posts/{post_id}";
   }
 
   // PostAttachments queries the attachments of the post having the given id
   rpc PostAttachments(QueryPostAttachmentsRequest)
       returns (QueryPostAttachmentsResponse) {
     option (google.api.http).get =
-        "/desmos/posts/v2/subspaces/{subspace_id}/posts/{post_id}/attachments";
+        "/mage/posts/v2/subspaces/{subspace_id}/posts/{post_id}/attachments";
   }
 
   // PollAnswers queries the answers for the poll having the given id
   rpc PollAnswers(QueryPollAnswersRequest) returns (QueryPollAnswersResponse) {
     option (google.api.http).get =
-        "/desmos/posts/v2/subspaces/{subspace_id}/posts/"
+        "/mage/posts/v2/subspaces/{subspace_id}/posts/"
         "{post_id}/polls/{poll_id}/answers";
   }
 
   // Params queries the module parameters
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/desmos/posts/v2/params";
+    option (google.api.http).get = "/mage/posts/v2/params";
   }
 }
 

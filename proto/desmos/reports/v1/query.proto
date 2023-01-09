@@ -1,5 +1,5 @@
 syntax = "proto3";
-package desmos.reports.v1;
+package mage.reports.v1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -7,39 +7,39 @@ import "google/protobuf/any.proto";
 import "cosmos_proto/cosmos.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-import "desmos/reports/v1/models.proto";
+import "mage/reports/v1/models.proto";
 
-option go_package = "github.com/desmos-labs/desmos/v4/x/reports/types";
+option go_package = "github.com/warmage-sports/mage/x/reports/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Reports allows to query the reports for a specific target
   rpc Reports(QueryReportsRequest) returns (QueryReportsResponse) {
     option (google.api.http).get =
-        "/desmos/reports/v1/subspaces/{subspace_id}/reports";
+        "/mage/reports/v1/subspaces/{subspace_id}/reports";
   }
 
   // Report allows to query the report having the given id
   rpc Report(QueryReportRequest) returns (QueryReportResponse) {
     option (google.api.http).get =
-        "/desmos/reports/v1/subspaces/{subspace_id}/reports/{report_id}";
+        "/mage/reports/v1/subspaces/{subspace_id}/reports/{report_id}";
   }
 
   // Reasons allows to query the supported reporting reasons for a subspace
   rpc Reasons(QueryReasonsRequest) returns (QueryReasonsResponse) {
     option (google.api.http).get =
-        "/desmos/reports/v1/subspaces/{subspace_id}/reasons";
+        "/mage/reports/v1/subspaces/{subspace_id}/reasons";
   }
 
   // Reason allows to query the reason having the given id
   rpc Reason(QueryReasonRequest) returns (QueryReasonResponse) {
     option (google.api.http).get =
-        "/desmos/reports/v1/subspaces/{subspace_id}/reasons/{reason_id}";
+        "/mage/reports/v1/subspaces/{subspace_id}/reasons/{reason_id}";
   }
 
   // Params allows to query the module parameters
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/desmos/reports/v1/params";
+    option (google.api.http).get = "/mage/reports/v1/params";
   }
 }
 

@@ -9,12 +9,12 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	feestypes "github.com/desmos-labs/desmos/v4/x/fees/types"
-	reactionstypes "github.com/desmos-labs/desmos/v4/x/reactions/types"
-	relationshipstypes "github.com/desmos-labs/desmos/v4/x/relationships/types"
-	reportstypes "github.com/desmos-labs/desmos/v4/x/reports/types"
+	feestypes "github.com/warmage-sports/mage/x/fees/types"
+	reactionstypes "github.com/warmage-sports/mage/x/reactions/types"
+	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
+	reportstypes "github.com/warmage-sports/mage/x/reports/types"
 
-	"github.com/desmos-labs/desmos/v4/app/upgrades"
+	"github.com/warmage-sports/mage/app/upgrades"
 )
 
 var (
@@ -50,23 +50,23 @@ func (u *Upgrade) Handler() upgradetypes.UpgradeHandler {
 
 		// Set the coin metadata
 		u.bk.SetDenomMetaData(ctx, banktypes.Metadata{
-			Description: "The token of Desmos",
+			Description: "The token of Mage",
 			DenomUnits: []*banktypes.DenomUnit{
 				{
-					Denom:    "udsm",
+					Denom:    "umage",
 					Exponent: 0,
 					Aliases:  nil,
 				},
 				{
-					Denom:    "DSM",
+					Denom:    "mage",
 					Exponent: 6,
 					Aliases:  nil,
 				},
 			},
-			Base:    "udsm",
-			Display: "DSM",
-			Name:    "Desmos DSM",
-			Symbol:  "DSM",
+			Base:    "umage",
+			Display: "mage",
+			Name:    "Mage mage",
+			Symbol:  "mage",
 		})
 
 		// Do nothing here as we don't have anything particular in this update
@@ -77,7 +77,7 @@ func (u *Upgrade) Handler() upgradetypes.UpgradeHandler {
 // StoreUpgrades implements upgrades.Upgrade
 func (u *Upgrade) StoreUpgrades() *storetypes.StoreUpgrades {
 	return &storetypes.StoreUpgrades{
-		// x/posts and x/subspaces keys where already present (by mistake) inside Desmos v2.3.1.
+		// x/posts and x/subspaces keys where already present (by mistake) inside Mage v2.3.1.
 		// For this reason we don't add them again here as this would result in the following error:
 		// failed to load latest version: failed to load store: initial version set to XX, but found earlier version 1
 		Added: []string{

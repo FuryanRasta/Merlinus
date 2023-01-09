@@ -1,4 +1,4 @@
-ARG DESMOS_VERSION="v0.17.2"
+ARG MAGE_VERSION="v0.17.2"
 FROM golang:1.18-alpine AS build-env
 
 ENV PACKAGES curl make git libc-dev bash gcc linux-headers eudev-dev python3
@@ -14,7 +14,7 @@ RUN cd /go/src/github.com/cosmos/cosmos-sdk/cosmovisor
 RUN make cosmovisor
 
 # Final image
-FROM desmoslabs/desmos:$DESMOS_VERSION
+FROM magelabs/mage:$MAGE_VERSION
 
 # Copy over binaries from the build-env
 COPY --from=build-env /go/src/github.com/cosmos/cosmos-sdk/cosmovisor/cosmovisor /usr/bin/cosmovisor
@@ -26,6 +26,6 @@ USER ${UID}:${GID}
 COPY wrapper.sh /usr/bin/wrapper.sh
 ENTRYPOINT ["bash", "/usr/bin/wrapper.sh"]
 
-# Run cosmovisor by default, omit entrypoint to ease using container with Desmos
+# Run cosmovisor by default, omit entrypoint to ease using container with Mage
 CMD ["cosmovisor"]
 STOPSIGNAL SIGTERM

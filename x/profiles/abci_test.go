@@ -7,14 +7,14 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
-	"github.com/desmos-labs/desmos/v4/x/profiles"
+	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/warmage-sports/mage/x/profiles"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/keeper"
+	"github.com/warmage-sports/mage/x/profiles/types"
 
-	relationshipskeeper "github.com/desmos-labs/desmos/v4/x/relationships/keeper"
-	relationshipstypes "github.com/desmos-labs/desmos/v4/x/relationships/types"
+	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
+	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
 
 	"github.com/cosmos/cosmos-sdk/store"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -25,9 +25,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/desmos-labs/desmos/v4/app"
-	subspaceskeeper "github.com/desmos-labs/desmos/v4/x/subspaces/keeper"
-	subspacestypes "github.com/desmos-labs/desmos/v4/x/subspaces/types"
+	"github.com/warmage-sports/mage/app"
+	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

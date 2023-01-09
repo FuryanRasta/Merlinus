@@ -3,11 +3,11 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/desmos-labs/desmos/v4/testutil/profilestesting"
+	"github.com/warmage-sports/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 func (suite *KeeperTestSuite) Test_SaveApplicationLink() {

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/desmos-labs/desmos/v4/x/posts/types"
+	"github.com/warmage-sports/mage/x/posts/types"
 )
 
 func TestSplitActivePollQueueKey(t *testing.T) {

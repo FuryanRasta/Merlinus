@@ -6,7 +6,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	oracletypes "github.com/desmos-labs/desmos/v4/x/oracle/types"
+	oracletypes "github.com/warmage-sports/mage/x/oracle/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
@@ -17,8 +17,8 @@ import (
 
 	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	"github.com/desmos-labs/desmos/v4/x/profiles/keeper"
-	"github.com/desmos-labs/desmos/v4/x/profiles/types"
+	"github.com/warmage-sports/mage/x/profiles/keeper"
+	"github.com/warmage-sports/mage/x/profiles/types"
 )
 
 var (

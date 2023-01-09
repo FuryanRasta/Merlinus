@@ -11,19 +11,19 @@ import (
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterInterface((*ReportTarget)(nil), nil)
-	cdc.RegisterConcrete(&UserTarget{}, "desmos/UserTarget", nil)
-	cdc.RegisterConcrete(&PostTarget{}, "desmos/PostTarget", nil)
+	cdc.RegisterConcrete(&UserTarget{}, "mage/UserTarget", nil)
+	cdc.RegisterConcrete(&PostTarget{}, "mage/PostTarget", nil)
 
-	cdc.RegisterConcrete(&MsgCreateReport{}, "desmos/MsgCreateReport", nil)
-	cdc.RegisterConcrete(&MsgDeleteReport{}, "desmos/MsgDeleteReport", nil)
-	cdc.RegisterConcrete(&MsgSupportStandardReason{}, "desmos/MsgSupportStandardReason", nil)
-	cdc.RegisterConcrete(&MsgAddReason{}, "desmos/MsgAddReason", nil)
-	cdc.RegisterConcrete(&MsgRemoveReason{}, "desmos/MsgRemoveReason", nil)
+	cdc.RegisterConcrete(&MsgCreateReport{}, "mage/MsgCreateReport", nil)
+	cdc.RegisterConcrete(&MsgDeleteReport{}, "mage/MsgDeleteReport", nil)
+	cdc.RegisterConcrete(&MsgSupportStandardReason{}, "mage/MsgSupportStandardReason", nil)
+	cdc.RegisterConcrete(&MsgAddReason{}, "mage/MsgAddReason", nil)
+	cdc.RegisterConcrete(&MsgRemoveReason{}, "mage/MsgRemoveReason", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {
 	registry.RegisterInterface(
-		"desmos.reports.v1.ReportTarget",
+		"mage.reports.v1.ReportTarget",
 		(*ReportTarget)(nil),
 		&UserTarget{},
 		&PostTarget{},

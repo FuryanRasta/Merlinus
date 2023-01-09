@@ -1,5 +1,5 @@
-# Desmos Docs
-This folder contains the documentation of Desmos Network hosted on https://docs.desmos.network.  
+# Mage Docs
+This folder contains the documentation of Mage Network hosted on https://docs.mage.network.  
 Feel free to open issues/PRs to contribute! 
 
 ## Installation
@@ -18,7 +18,7 @@ This command starts a local development server and opens up a browser window. Mo
 without having to restart the server.
 
 ## Update graphql schemas (if needed)
-If a new Desmos release also updated graphql schemas, it's required to also update the related schema files. To do it, run the following command in the project directory:
+If a new Mage release also updated graphql schemas, it's required to also update the related schema files. To do it, run the following command in the project directory:
 
 ```console
 npx docusaurus graphql-to-doc

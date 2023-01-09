@@ -5,11 +5,11 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/server"
 
-	"github.com/desmos-labs/desmos/v4/app"
+	"github.com/warmage-sports/mage/app"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/desmos-labs/desmos/v4/app/desmos/cmd"
+	"github.com/warmage-sports/mage/app/mage/cmd"
 )
 
 func main() {

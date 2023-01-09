@@ -21,30 +21,30 @@ make setup-localnet COIN_DENOM="udaric" NODES=$NODES > /dev/null > /dev/null
 echo "===> Setting up the genesis file"
 docker run --rm --user $UID:$GID \
   -v $TESTNETDIR:/usr/src/app \
-  -v $BUILDDIR:/desmos:Z \
-  desmoslabs/desmos-python python setup_genesis.py /desmos $NODES $GENESIS_URL > /dev/null
+  -v $BUILDDIR:/mage:Z \
+  magelabs/mage-python python setup_genesis.py /mage $NODES $GENESIS_URL > /dev/null
 
-# Build the new Desmos-Cosmovisor image
-echo "===> Building the new Desmos-Cosmovisor image"
-make -C $CONTRIBFOLDER/images desmos-cosmovisor DESMOS_VERSION=$GENESIS_VERSION > /dev/null
+# Build the new Mage-Cosmovisor image
+echo "===> Building the new Mage-Cosmovisor image"
+make -C $CONTRIBFOLDER/images mage-cosmovisor MAGE_VERSION=$GENESIS_VERSION > /dev/null
 
-# Set the correct Desmos image version inside the docker compose file
+# Set the correct Mage image version inside the docker compose file
 echo "===> Setting up the Docker compose file"
-sed -i "s|image: \".*\"|image: \"desmoslabs/desmos-cosmovisor:$GENESIS_VERSION\"|g" $TESTNETDIR/docker-compose.yml
+sed -i "s|image: \".*\"|image: \"magelabs/mage-cosmovisor:$GENESIS_VERSION\"|g" $TESTNETDIR/docker-compose.yml
 
 # Build the current code using Alpine to make sure it's later compatible with the devnet
-echo "===> Building Desmos"
+echo "===> Building Mage"
 make build-alpine > /dev/null
 
-# Copy the Desmos binary into the proper folders
-UPGRADE_FOLDER="$BUILDDIR/node0/desmos/cosmovisor/upgrades/$UPGRADE_NAME/bin"
+# Copy the Mage binary into the proper folders
+UPGRADE_FOLDER="$BUILDDIR/node0/mage/cosmovisor/upgrades/$UPGRADE_NAME/bin"
 if [ ! -d "$UPGRADE_FOLDER" ]; then
   echo "===> Setting up upgrade binary"
 
   for ((i = 0; i < $NODES; i++)); do
     echo "====> Node $i"
-    mkdir -p "$BUILDDIR/node$i/desmos/cosmovisor/upgrades/$UPGRADE_NAME/bin"
-    cp "$BUILDDIR/desmos" "$BUILDDIR/node$i/desmos/cosmovisor/upgrades/$UPGRADE_NAME/bin/desmos"
+    mkdir -p "$BUILDDIR/node$i/mage/cosmovisor/upgrades/$UPGRADE_NAME/bin"
+    cp "$BUILDDIR/mage" "$BUILDDIR/node$i/mage/cosmovisor/upgrades/$UPGRADE_NAME/bin/mage"
   done
 fi
 
