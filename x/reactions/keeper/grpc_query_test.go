@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryServer_Reactions() {

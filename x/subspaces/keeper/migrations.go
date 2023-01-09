@@ -4,9 +4,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 
-	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
-	v3 "github.com/warmage-sports/mage/x/subspaces/legacy/v3"
-	v4 "github.com/warmage-sports/mage/x/subspaces/legacy/v4"
+	v2 "github.com/magewar/mage/x/subspaces/legacy/v2"
+	v3 "github.com/magewar/mage/x/subspaces/legacy/v3"
+	v4 "github.com/magewar/mage/x/subspaces/legacy/v4"
 )
 
 // DONTCOVER

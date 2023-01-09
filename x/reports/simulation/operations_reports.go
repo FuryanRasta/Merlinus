@@ -6,15 +6,15 @@ import (
 	"math/rand"
 	"time"
 
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
-	postssim "github.com/warmage-sports/mage/x/posts/simulation"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
+	postssim "github.com/magewar/mage/x/posts/simulation"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	"github.com/warmage-sports/mage/testutil/simtesting"
+	"github.com/magewar/mage/testutil/simtesting"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -23,8 +23,8 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/warmage-sports/mage/x/reports/keeper"
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/keeper"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 // SimulateMsgCreateReport tests and runs a single MsgCreateReport

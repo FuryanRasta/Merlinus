@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	cliutils "github.com/warmage-sports/mage/x/posts/client/utils"
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	cliutils "github.com/magewar/mage/x/posts/client/utils"
+	"github.com/magewar/mage/x/posts/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // NewTxCmd returns a new command to perform subspaces transactions

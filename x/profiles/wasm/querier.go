@@ -5,13 +5,13 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	profileskeeper "github.com/magewar/mage/x/profiles/keeper"
+	"github.com/magewar/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/warmage-sports/mage/cosmwasm"
+	"github.com/magewar/mage/cosmwasm"
 )
 
 var _ cosmwasm.Querier = ProfilesWasmQuerier{}

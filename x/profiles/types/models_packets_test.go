@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/testutil/profilestesting"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func TestLinkChainAccountPacketData_Validate(t *testing.T) {

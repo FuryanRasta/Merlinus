@@ -11,8 +11,8 @@ import (
 
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/profiles/client/utils"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/profiles/client/utils"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
@@ -25,9 +25,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/warmage-sports/mage/testutil"
-	"github.com/warmage-sports/mage/testutil/profilestesting"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/testutil"
+	"github.com/magewar/mage/testutil/profilestesting"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 const (

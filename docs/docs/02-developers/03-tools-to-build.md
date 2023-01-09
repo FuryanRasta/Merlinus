@@ -190,7 +190,7 @@ assertIsDeliverTxSuccess(result);
 ```
 
 ## Mage Bindings
-The [Mage Bindings](https://github.com/warmage-sports/mage-bindings) are a set of packages that make possible to interact with the Mage chain directly from smart contracts. With them, you can build your own dApp smart contracts taking full advantage of the Mage chain modules to create even more personalisation to your app.   
+The [Mage Bindings](https://github.com/magewar/mage-bindings) are a set of packages that make possible to interact with the Mage chain directly from smart contracts. With them, you can build your own dApp smart contracts taking full advantage of the Mage chain modules to create even more personalisation to your app.   
 You can find the bindings generated documentation here: [Mage Bindings docs](https://docs.rs/mage-bindings/1.0.0/mage_bindings/index.html). 
 
 ### Example 1: Post from a contract
@@ -233,7 +233,7 @@ fn query_posts_from_contract(deps: Deps<MageQuery>, subspace_id: Uint64, paginat
 ```
 
 #### Notes
-The above examples are really simple examples of what you can achieve with the Mage Bindings packages inside smart contracts. More examples will be added here in the future, and you can find some other inside the [Mage Bindings Github repository](https://github.com/warmage-sports/mage-bindings).
+The above examples are really simple examples of what you can achieve with the Mage Bindings packages inside smart contracts. More examples will be added here in the future, and you can find some other inside the [Mage Bindings Github repository](https://github.com/magewar/mage-bindings).
 
 ## GraphQL APIs
 The [GraphQL APIs](../07-graphql/01-overview.md) simplifies the way with which clients interact with the Mage blockchain to obtain the data their applications need. These queries can be customised with a wide range of parameters giving developers a great flexibility while building their apps.

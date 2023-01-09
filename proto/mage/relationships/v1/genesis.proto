@@ -1,0 +1,22 @@
+syntax = "proto3";
+package mage.relationships.v1;
+
+import "gogoproto/gogo.proto";
+import "mage/relationships/v1/models.proto";
+
+option go_package = "github.com/magewar/mage/x/relationships/types";
+
+// GenesisState defines the profiles module's genesis state.
+message GenesisState {
+  option (gogoproto.goproto_getters) = false;
+
+  repeated mage.relationships.v1.Relationship relationships = 1 [
+    (gogoproto.moretags) = "yaml:\"relationships\"",
+    (gogoproto.nullable) = false
+  ];
+
+  repeated mage.relationships.v1.UserBlock blocks = 2 [
+    (gogoproto.moretags) = "yaml:\"blocks\"",
+    (gogoproto.nullable) = false
+  ];
+}

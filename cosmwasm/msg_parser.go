@@ -7,12 +7,12 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
-	reactionstypes "github.com/warmage-sports/mage/x/reactions/types"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	reportstypes "github.com/warmage-sports/mage/x/reports/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
+	reactionstypes "github.com/magewar/mage/x/reactions/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	reportstypes "github.com/magewar/mage/x/reports/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 const (

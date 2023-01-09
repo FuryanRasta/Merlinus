@@ -9,12 +9,12 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	feestypes "github.com/warmage-sports/mage/x/fees/types"
-	reactionstypes "github.com/warmage-sports/mage/x/reactions/types"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	reportstypes "github.com/warmage-sports/mage/x/reports/types"
+	feestypes "github.com/magewar/mage/x/fees/types"
+	reactionstypes "github.com/magewar/mage/x/reactions/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	reportstypes "github.com/magewar/mage/x/reports/types"
 
-	"github.com/warmage-sports/mage/app/upgrades"
+	"github.com/magewar/mage/app/upgrades"
 )
 
 var (

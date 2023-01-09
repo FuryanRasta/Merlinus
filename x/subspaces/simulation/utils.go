@@ -6,13 +6,13 @@ import (
 	"math/rand"
 	"time"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 var (

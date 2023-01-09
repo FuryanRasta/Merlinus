@@ -36,9 +36,9 @@ import (
 	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
 	"github.com/cosmos/ibc-go/v3/testing/mock"
 
-	simapp "github.com/warmage-sports/mage/app"
+	simapp "github.com/magewar/mage/app"
 
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 )
 
 const (

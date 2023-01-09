@@ -9,11 +9,11 @@ import (
 
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 
-	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profileskeeper "github.com/magewar/mage/x/profiles/keeper"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store"
@@ -25,13 +25,13 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/reactions/keeper"
-	"github.com/warmage-sports/mage/x/reactions/types"
-	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/reactions/keeper"
+	"github.com/magewar/mage/x/reactions/types"
+	relationshipskeeper "github.com/magewar/mage/x/relationships/keeper"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func buildAddReactionRequest(cdc codec.Codec, msg sdk.Msg) json.RawMessage {

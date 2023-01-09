@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/warmage-sports/mage/testutil"
-	"github.com/warmage-sports/mage/x/supply/client/cli"
-	"github.com/warmage-sports/mage/x/supply/types"
+	"github.com/magewar/mage/testutil"
+	"github.com/magewar/mage/x/supply/client/cli"
+	"github.com/magewar/mage/x/supply/types"
 )
 
 type IntegrationTestSuite struct {

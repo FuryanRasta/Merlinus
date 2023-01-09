@@ -6,16 +6,16 @@ import (
 	"math/rand"
 	"time"
 
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
 
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	postssim "github.com/warmage-sports/mage/x/posts/simulation"
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/reports/types"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	postssim "github.com/magewar/mage/x/posts/simulation"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/reports/types"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // RandomizeGenState generates a random GenesisState for subspaces

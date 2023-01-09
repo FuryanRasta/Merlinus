@@ -7,14 +7,14 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
-	"github.com/warmage-sports/mage/x/profiles"
+	"github.com/magewar/mage/testutil/profilestesting"
+	"github.com/magewar/mage/x/profiles"
 
-	"github.com/warmage-sports/mage/x/profiles/keeper"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/keeper"
+	"github.com/magewar/mage/x/profiles/types"
 
-	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
+	relationshipskeeper "github.com/magewar/mage/x/relationships/keeper"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
 
 	"github.com/cosmos/cosmos-sdk/store"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -25,9 +25,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

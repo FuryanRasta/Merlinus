@@ -22,7 +22,7 @@ To install `mage` execute the following commands:
 
 ```bash
 cd /home/$USER
-git clone https://github.com/warmage-sports/mage && cd mage
+git clone https://github.com/magewar/mage && cd mage
 make install
 ```
 

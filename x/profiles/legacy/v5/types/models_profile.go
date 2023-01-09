@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/warmage-sports/mage/x/commons"
+	"github.com/magewar/mage/x/commons"
 
 	"github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 

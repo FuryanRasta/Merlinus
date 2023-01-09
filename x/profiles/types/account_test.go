@@ -6,14 +6,14 @@ import (
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func TestProfile_Update(t *testing.T) {

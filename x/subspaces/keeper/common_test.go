@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/warmage-sports/mage/x/subspaces/keeper"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/keeper"
+	"github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store"
@@ -16,7 +16,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 )
 
 type KeeperTestsuite struct {

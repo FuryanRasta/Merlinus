@@ -3,8 +3,8 @@ package profiles
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/profiles/keeper"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/keeper"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 // BeginBlocker is called every block, processes expired application links

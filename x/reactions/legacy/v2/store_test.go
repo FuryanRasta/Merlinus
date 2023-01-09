@@ -7,9 +7,9 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/warmage-sports/mage/testutil/storetesting"
-	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/testutil/storetesting"
+	profileskeeper "github.com/magewar/mage/x/profiles/keeper"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
@@ -17,15 +17,15 @@ import (
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	v2 "github.com/warmage-sports/mage/x/reactions/legacy/v2"
-	"github.com/warmage-sports/mage/x/reactions/types"
-	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	v2 "github.com/magewar/mage/x/reactions/legacy/v2"
+	"github.com/magewar/mage/x/reactions/types"
+	relationshipskeeper "github.com/magewar/mage/x/relationships/keeper"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestMigrateStore(t *testing.T) {

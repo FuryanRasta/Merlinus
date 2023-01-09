@@ -3,8 +3,8 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/fees/types"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/fees/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 )
 
 func (suite *KeeperTestSuite) TestKeeper_ExportGenesis() {

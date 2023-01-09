@@ -153,4 +153,4 @@ The following tests cases needs to be added:
 
 ## References
 
-- Issue [#643](https://github.com/warmage-sports/mage/issues/643)
+- Issue [#643](https://github.com/magewar/mage/issues/643)

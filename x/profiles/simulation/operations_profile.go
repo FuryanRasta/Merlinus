@@ -5,9 +5,9 @@ package simulation
 import (
 	"math/rand"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	"github.com/warmage-sports/mage/testutil/simtesting"
+	"github.com/magewar/mage/testutil/simtesting"
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
@@ -16,8 +16,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 
-	"github.com/warmage-sports/mage/x/profiles/keeper"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/keeper"
+	"github.com/magewar/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

@@ -3,7 +3,7 @@ package v1
 // DONTCOVER
 
 import (
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 var (

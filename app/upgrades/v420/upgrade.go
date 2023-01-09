@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/warmage-sports/mage/app/upgrades"
+	"github.com/magewar/mage/app/upgrades"
 )
 
 var (

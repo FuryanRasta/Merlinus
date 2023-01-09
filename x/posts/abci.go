@@ -6,8 +6,8 @@ import (
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/posts/keeper"
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/keeper"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 // EndBlocker called every block, process ended polls

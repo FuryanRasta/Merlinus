@@ -1,4 +1,4 @@
-module github.com/warmage-sports/mage
+module github.com/magewar/mage
 
 go 1.18
 

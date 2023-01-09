@@ -7,9 +7,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	subspacetypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacetypes "github.com/magewar/mage/x/subspaces/types"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 // HasProfile returns true iff the given user has a profile, or an error if something is wrong.

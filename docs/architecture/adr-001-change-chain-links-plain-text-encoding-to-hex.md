@@ -196,5 +196,5 @@ As a result, this feature is backwards compatible.
 
 ## References
 
-- Issue [#636](https://github.com/warmage-sports/mage/issues/636)
+- Issue [#636](https://github.com/magewar/mage/issues/636)
 - [The basics of UTF-8](https://www.codeguru.com/cplusplus/the-basics-of-utf-8/)

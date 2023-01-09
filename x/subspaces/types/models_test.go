@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/stretchr/testify/require"
 )

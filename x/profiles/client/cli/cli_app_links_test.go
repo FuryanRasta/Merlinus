@@ -13,8 +13,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/warmage-sports/mage/x/profiles/client/cli"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/client/cli"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func (s *IntegrationTestSuite) TestCmdQueryApplicationsLinks() {

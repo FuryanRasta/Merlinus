@@ -5,9 +5,9 @@ package types
 import (
 	"encoding/binary"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 const (

@@ -13,13 +13,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	reactionstypes "github.com/warmage-sports/mage/x/reactions/types"
+	reactionstypes "github.com/magewar/mage/x/reactions/types"
 
-	feestypes "github.com/warmage-sports/mage/x/fees/types"
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	reportstypes "github.com/warmage-sports/mage/x/reports/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	feestypes "github.com/magewar/mage/x/fees/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	reportstypes "github.com/magewar/mage/x/reports/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
@@ -32,7 +32,7 @@ import (
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	wasmsim "github.com/CosmWasm/wasmd/x/wasm/simulation"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"

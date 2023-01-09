@@ -8,11 +8,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	postssim "github.com/warmage-sports/mage/x/posts/simulation"
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/reactions/types"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	postssim "github.com/magewar/mage/x/posts/simulation"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/reactions/types"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // RandomizedGenState generates a random GenesisState

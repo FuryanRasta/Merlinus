@@ -5,13 +5,13 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
-	"github.com/warmage-sports/mage/x/posts/types"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
+	"github.com/magewar/mage/x/posts/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/warmage-sports/mage/cosmwasm"
+	"github.com/magewar/mage/cosmwasm"
 )
 
 var _ cosmwasm.Querier = PostsWasmQuerier{}

@@ -9,7 +9,7 @@ import (
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 type Keeper struct {

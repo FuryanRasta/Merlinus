@@ -137,7 +137,7 @@ The following tests cases MUST to be present:
 
 ## References
 
-- Issue [#633](https://github.com/warmage-sports/mage/issues/633)
+- Issue [#633](https://github.com/magewar/mage/issues/633)
 - [SignatureData](https://github.com/cosmos/cosmos-sdk/blob/master/types/tx/signing/signature_data.go)
 - [Signature](https://github.com/cosmos/cosmos-sdk/blob/master/types/tx/signing/signature.go)
 - [Multisig](https://github.com/cosmos/cosmos-sdk/blob/master/crypto/keys/multisig/multisig.go)

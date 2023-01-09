@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/warmage-sports/mage/x/reactions/client/cli"
+	"github.com/magewar/mage/x/reactions/client/cli"
 
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
@@ -28,9 +28,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/warmage-sports/mage/x/reactions/keeper"
-	"github.com/warmage-sports/mage/x/reactions/simulation"
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/x/reactions/keeper"
+	"github.com/magewar/mage/x/reactions/simulation"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 const (

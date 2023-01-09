@@ -3,12 +3,12 @@ package keeper_test
 import (
 	"time"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 func (suite *KeeperTestsuite) TestKeeper_SetNextReportID() {

@@ -9,7 +9,7 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 func ParamChanges(r *rand.Rand) []simtypes.ParamChange {

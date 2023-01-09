@@ -5,8 +5,8 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v2 "github.com/warmage-sports/mage/x/reactions/legacy/v2"
-	"github.com/warmage-sports/mage/x/reactions/types"
+	v2 "github.com/magewar/mage/x/reactions/legacy/v2"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"math/rand"
 
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 var msgsTypes = []string{

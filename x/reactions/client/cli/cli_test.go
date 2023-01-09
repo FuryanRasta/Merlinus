@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/warmage-sports/mage/app"
-	cliutils "github.com/warmage-sports/mage/x/reactions/client/utils"
+	"github.com/magewar/mage/app"
+	cliutils "github.com/magewar/mage/x/reactions/client/utils"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
@@ -18,16 +18,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/warmage-sports/mage/x/reactions/client/cli"
+	"github.com/magewar/mage/x/reactions/client/cli"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/warmage-sports/mage/testutil"
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/testutil"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 func TestIntegrationTestSuite(t *testing.T) {

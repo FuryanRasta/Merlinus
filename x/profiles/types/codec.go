@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
 
-	"github.com/warmage-sports/mage/types/crypto/ethsecp256k1"
+	"github.com/magewar/mage/types/crypto/ethsecp256k1"
 )
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {

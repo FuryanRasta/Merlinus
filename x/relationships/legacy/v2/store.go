@@ -5,8 +5,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v1 "github.com/warmage-sports/mage/x/relationships/legacy/v1"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	v1 "github.com/magewar/mage/x/relationships/legacy/v1"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // MigrateStore performs in-place store migrations from v1 to v2.

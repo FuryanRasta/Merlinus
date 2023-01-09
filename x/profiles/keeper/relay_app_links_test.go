@@ -6,22 +6,22 @@ import (
 	"strings"
 	"time"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/testutil/profilestesting"
 
-	"github.com/warmage-sports/mage/pkg/obi"
+	"github.com/magewar/mage/pkg/obi"
 
 	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
 	"github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	"github.com/warmage-sports/mage/testutil/ibctesting"
+	"github.com/magewar/mage/testutil/ibctesting"
 
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	oracletypes "github.com/warmage-sports/mage/x/oracle/types"
+	oracletypes "github.com/magewar/mage/x/oracle/types"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func createRequestPacketData(clientID string) oracletypes.OracleRequestPacketData {

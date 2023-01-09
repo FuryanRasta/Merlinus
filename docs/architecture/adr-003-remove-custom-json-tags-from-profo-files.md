@@ -69,4 +69,4 @@ These changes will not produce any backwards compatibility problem.
 
 ## References
 
-- Issue [#644](https://github.com/warmage-sports/mage/issues/644)
+- Issue [#644](https://github.com/magewar/mage/issues/644)

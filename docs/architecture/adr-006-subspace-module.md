@@ -306,4 +306,4 @@ message MsgSetUserPermissionsResponse {}
 ### Neutral
 
 ## References
-- Extend the concept of subspaces: https://github.com/warmage-sports/mage/discussions/375
+- Extend the concept of subspaces: https://github.com/magewar/mage/discussions/375

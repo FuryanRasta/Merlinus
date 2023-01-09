@@ -9,9 +9,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/posts/types"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // RandomizeGenState generates a random GenesisState for posts

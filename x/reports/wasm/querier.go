@@ -7,9 +7,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/warmage-sports/mage/cosmwasm"
-	reportskeeper "github.com/warmage-sports/mage/x/reports/keeper"
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/cosmwasm"
+	reportskeeper "github.com/magewar/mage/x/reports/keeper"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 var _ cosmwasm.Querier = ReportsWasmQuerier{}

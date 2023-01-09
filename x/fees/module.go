@@ -17,10 +17,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/warmage-sports/mage/x/fees/client/cli"
-	"github.com/warmage-sports/mage/x/fees/keeper"
-	"github.com/warmage-sports/mage/x/fees/simulation"
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/client/cli"
+	"github.com/magewar/mage/x/fees/keeper"
+	"github.com/magewar/mage/x/fees/simulation"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 const (

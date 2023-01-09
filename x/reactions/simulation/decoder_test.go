@@ -7,9 +7,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/reactions/simulation"
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/reactions/simulation"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 func TestDecodeStore(t *testing.T) {

@@ -17,7 +17,7 @@ You will need to build the first version of the Mage testnet in order to be able
 cd $HOME
 
 # Clone the Mage software
-git clone https://github.com/warmage-sports/mage.git && cd mage
+git clone https://github.com/magewar/mage.git && cd mage
 
 # Checkout the correct tag
 git checkout tags/v0.17.0
