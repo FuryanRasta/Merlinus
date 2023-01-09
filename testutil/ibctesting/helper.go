@@ -23,7 +23,7 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	simapp "github.com/warmage-sports/mage/app"
+	simapp "github.com/magewar/mage/app"
 )
 
 // DefaultConsensusParams defines the default Tendermint consensus params used in

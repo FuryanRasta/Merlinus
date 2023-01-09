@@ -5,9 +5,9 @@ package simulation
 import (
 	"math/rand"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	"github.com/warmage-sports/mage/testutil/simtesting"
+	"github.com/magewar/mage/testutil/simtesting"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -16,8 +16,8 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/warmage-sports/mage/x/subspaces/keeper"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/keeper"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 // SimulateMsgCreateSubspace tests and runs a single MsgCreateSubspace

@@ -12,9 +12,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/fees/keeper"
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/fees/keeper"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 func TestKeeperTestSuite(t *testing.T) {

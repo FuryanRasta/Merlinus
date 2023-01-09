@@ -12,8 +12,8 @@ import (
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/warmage-sports/mage/testutil"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/testutil"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
@@ -25,8 +25,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/warmage-sports/mage/x/relationships/client/cli"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/client/cli"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 type IntegrationTestSuite struct {

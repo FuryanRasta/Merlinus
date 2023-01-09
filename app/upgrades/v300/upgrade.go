@@ -7,9 +7,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/warmage-sports/mage/app/upgrades"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app/upgrades"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 var (
@@ -55,7 +55,7 @@ func (u *Upgrade) StoreUpgrades() *storetypes.StoreUpgrades {
 		},
 
 		// The subspaces key is here because it was already registered (due to an error) inside v2.3.1
-		// https://github.com/warmage-sports/mage/blob/v2.3.1/app/app.go#L270
+		// https://github.com/magewar/mage/blob/v2.3.1/app/app.go#L270
 		Renamed: []storetypes.StoreRename{
 			{
 				OldKey: "subspaces",

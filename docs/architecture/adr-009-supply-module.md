@@ -49,4 +49,4 @@ This query will return the circulating supply by subtracting the total vested to
 
 ## References
 
-- Issue [#733](https://github.com/warmage-sports/mage/issues/773).
+- Issue [#733](https://github.com/magewar/mage/issues/773).

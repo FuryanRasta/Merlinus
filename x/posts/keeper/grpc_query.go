@@ -11,7 +11,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 var _ types.QueryServer = &Keeper{}

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // SaveRelationship allows to store the given relationship returning an error if something goes wrong

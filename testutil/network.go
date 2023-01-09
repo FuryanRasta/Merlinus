@@ -17,7 +17,7 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 )
 
 // NewAppConstructor returns a new Mage AppConstructor

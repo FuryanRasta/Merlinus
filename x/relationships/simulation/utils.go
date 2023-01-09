@@ -7,7 +7,7 @@ import (
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // RandomGenesisAccount picks and returns a random genesis account from an array

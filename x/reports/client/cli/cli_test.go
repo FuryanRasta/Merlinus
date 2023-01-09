@@ -14,15 +14,15 @@ import (
 	"github.com/gogo/protobuf/proto"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/reports/client/cli"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/reports/client/cli"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/warmage-sports/mage/testutil"
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/testutil"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 func TestIntegrationTestSuite(t *testing.T) {

@@ -5,9 +5,9 @@ package types
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // ProfilesKeeper represents a keeper that deals with profiles

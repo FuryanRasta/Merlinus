@@ -11,7 +11,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/warmage-sports/mage/x/supply/types"
+	"github.com/magewar/mage/x/supply/types"
 )
 
 // DONTCOVER

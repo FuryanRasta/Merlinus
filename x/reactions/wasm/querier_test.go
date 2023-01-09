@@ -6,10 +6,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
-	"github.com/warmage-sports/mage/x/reactions/types"
-	"github.com/warmage-sports/mage/x/reactions/wasm"
+	"github.com/magewar/mage/x/reactions/types"
+	"github.com/magewar/mage/x/reactions/wasm"
 )
 
 func (suite *Testsuite) TestReactionsWasmQuerier_QueryCustom() {

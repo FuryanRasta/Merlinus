@@ -7,7 +7,7 @@ import (
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 )

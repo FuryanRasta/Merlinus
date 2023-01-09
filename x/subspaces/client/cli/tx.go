@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/x/authz"
 
-	subspacesauthz "github.com/warmage-sports/mage/x/subspaces/authz"
+	subspacesauthz "github.com/magewar/mage/x/subspaces/authz"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
@@ -17,7 +17,7 @@ import (
 	authzcli "github.com/cosmos/cosmos-sdk/x/authz/client/cli"
 	"github.com/spf13/cobra"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 // DONTCOVER

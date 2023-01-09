@@ -32,7 +32,7 @@ In your terminal, run the following:
 cd $HOME
 
 # Clone the Mage software
-git clone https://github.com/warmage-sports/mage.git && cd mage
+git clone https://github.com/magewar/mage.git && cd mage
 
 # Checkout the correct tag
 git checkout tags/v2.3.1

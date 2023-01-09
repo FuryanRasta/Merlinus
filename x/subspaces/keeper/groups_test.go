@@ -3,7 +3,7 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestsuite) TestKeeper_SetNextGroupID() {

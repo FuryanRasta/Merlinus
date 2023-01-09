@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 // SetUserPermissions sets the given permission for the specific user inside a single subspace

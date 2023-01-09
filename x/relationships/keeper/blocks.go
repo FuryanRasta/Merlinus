@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // SaveUserBlock allows to store the given block inside the store

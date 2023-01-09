@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/posts/wasm"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/wasm"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestMsgsParser_ParseCustomMsgs(t *testing.T) {

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 // SetParams sets params on the store

@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 // IterateSubspaces iterates through the subspaces set and performs the given function

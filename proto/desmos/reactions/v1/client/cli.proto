@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 
 import "mage/reactions/v1/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/reactions/client/utils";
+option go_package = "github.com/magewar/mage/x/reactions/client/utils";
 
 // SetReactionsParamsJSON contains the data that can be specified when setting a
 // subspace reactions params using the CLI command

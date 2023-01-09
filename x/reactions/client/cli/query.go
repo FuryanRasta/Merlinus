@@ -6,15 +6,15 @@ import (
 	"context"
 	"fmt"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/warmage-sports/mage/x/reactions/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/reactions/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 const (

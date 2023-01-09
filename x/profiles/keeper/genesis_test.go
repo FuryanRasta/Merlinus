@@ -4,12 +4,12 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func (suite *KeeperTestSuite) Test_ExportGenesis() {

@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	v4types "github.com/warmage-sports/mage/x/profiles/legacy/v4/types"
-	v5types "github.com/warmage-sports/mage/x/profiles/legacy/v5/types"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	v4types "github.com/magewar/mage/x/profiles/legacy/v4/types"
+	v5types "github.com/magewar/mage/x/profiles/legacy/v5/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 // MigrateStore performs in-place store migrations from v4 to v5.

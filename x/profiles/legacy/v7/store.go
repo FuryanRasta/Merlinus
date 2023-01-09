@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 // MigrateStore performs in-place store migrations from v7 to v8.

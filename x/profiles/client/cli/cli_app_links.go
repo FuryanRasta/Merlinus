@@ -14,7 +14,7 @@ import (
 	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
 	channelutils "github.com/cosmos/ibc-go/v3/modules/core/04-channel/client/utils"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 const (

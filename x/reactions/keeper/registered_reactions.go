@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 // SetNextRegisteredReactionID sets the next registered reaction id for the given subspace

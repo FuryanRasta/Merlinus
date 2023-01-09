@@ -5,10 +5,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/reactions/keeper"
-	"github.com/warmage-sports/mage/x/reactions/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/reactions/keeper"
+	"github.com/magewar/mage/x/reactions/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestSuite) TestValidSubspacesInvariant() {

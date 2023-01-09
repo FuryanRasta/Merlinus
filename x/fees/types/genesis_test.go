@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 func TestValidateGenesis(t *testing.T) {

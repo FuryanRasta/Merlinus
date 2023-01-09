@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 
 import "mage/posts/v2/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/posts/types";
+option go_package = "github.com/magewar/mage/x/posts/types";
 
 // Msg defines the posts Msg service.
 service Msg {

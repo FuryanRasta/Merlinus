@@ -7,10 +7,10 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 
-	v5types "github.com/warmage-sports/mage/x/profiles/legacy/v5/types"
-	v6 "github.com/warmage-sports/mage/x/profiles/legacy/v6"
+	v5types "github.com/magewar/mage/x/profiles/legacy/v5/types"
+	v6 "github.com/magewar/mage/x/profiles/legacy/v6"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	"github.com/cosmos/cosmos-sdk/store"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -27,8 +27,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func buildContext(

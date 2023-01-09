@@ -9,9 +9,9 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/testutil/storetesting"
-	"github.com/warmage-sports/mage/x/subspaces/authz"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/testutil/storetesting"
+	"github.com/magewar/mage/x/subspaces/authz"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestGenericSubspaceAuthorization_Accept(t *testing.T) {

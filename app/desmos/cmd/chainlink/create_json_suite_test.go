@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
@@ -17,7 +17,7 @@ import (
 	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 )
 
 func TestCreateJSONChainLinkSuite(t *testing.T) {

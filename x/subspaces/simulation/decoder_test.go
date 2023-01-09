@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/warmage-sports/mage/x/subspaces/simulation"
+	"github.com/magewar/mage/x/subspaces/simulation"
 
 	"github.com/cosmos/cosmos-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestDecodeStore(t *testing.T) {

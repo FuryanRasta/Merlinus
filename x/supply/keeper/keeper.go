@@ -10,7 +10,7 @@ import (
 	distributionkeeper "github.com/cosmos/cosmos-sdk/x/distribution/keeper"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/warmage-sports/mage/x/supply/types"
+	"github.com/magewar/mage/x/supply/types"
 )
 
 type Keeper struct {

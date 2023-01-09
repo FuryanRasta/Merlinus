@@ -6,11 +6,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	reactionstypes "github.com/warmage-sports/mage/x/reactions/types"
-	reportstypes "github.com/warmage-sports/mage/x/reports/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	reactionstypes "github.com/magewar/mage/x/reactions/types"
+	reportstypes "github.com/magewar/mage/x/reports/types"
 
-	"github.com/warmage-sports/mage/app/upgrades"
+	"github.com/magewar/mage/app/upgrades"
 )
 
 var (

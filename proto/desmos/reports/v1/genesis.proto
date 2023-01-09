@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 
 import "mage/reports/v1/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/reports/types";
+option go_package = "github.com/magewar/mage/x/reports/types";
 
 // GenesisState defines the reports module's genesis state.
 message GenesisState {

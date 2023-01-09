@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 const (

@@ -1,11 +1,11 @@
 package provider
 
 import (
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder"
-	multibuilder "github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder/multi"
-	singlebuilder "github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder/single"
-	multigetter "github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter/multi"
-	singlegetter "github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter/single"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/builder"
+	multibuilder "github.com/magewar/mage/app/mage/cmd/chainlink/builder/multi"
+	singlebuilder "github.com/magewar/mage/app/mage/cmd/chainlink/builder/single"
+	multigetter "github.com/magewar/mage/app/mage/cmd/chainlink/getter/multi"
+	singlegetter "github.com/magewar/mage/app/mage/cmd/chainlink/getter/single"
 )
 
 // DefaultChainLinkJSONBuilderProvider returns the default ChainLinkJSONBuilder provider implementation

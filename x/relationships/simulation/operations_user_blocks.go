@@ -5,12 +5,12 @@ package simulation
 import (
 	"math/rand"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
 
-	"github.com/warmage-sports/mage/testutil/simtesting"
+	"github.com/magewar/mage/testutil/simtesting"
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
@@ -20,8 +20,8 @@ import (
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/relationships/keeper"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/keeper"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // SimulateMsgBlockUser tests and runs a single MsgBlockUser

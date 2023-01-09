@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 func TestReport_Validate(t *testing.T) {

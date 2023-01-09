@@ -217,4 +217,4 @@ Also, posts will need to be put inside a particular section (by default the `0` 
 
 ## References
 
-- Issue [#856](https://github.com/warmage-sports/mage/issues/856).
+- Issue [#856](https://github.com/magewar/mage/issues/856).

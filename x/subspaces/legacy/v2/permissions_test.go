@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
+	v2 "github.com/magewar/mage/x/subspaces/legacy/v2"
 )
 
 func TestSplitPermissions(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/warmage-sports/mage/x/supply/keeper"
+	"github.com/magewar/mage/x/supply/keeper"
 )
 
 type KeeperTestSuite struct {

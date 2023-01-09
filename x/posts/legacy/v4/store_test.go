@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	v4 "github.com/warmage-sports/mage/x/posts/legacy/v4"
+	v4 "github.com/magewar/mage/x/posts/legacy/v4"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/testutil/storetesting"
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/testutil/storetesting"
+	"github.com/magewar/mage/x/posts/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestMigrateStore(t *testing.T) {

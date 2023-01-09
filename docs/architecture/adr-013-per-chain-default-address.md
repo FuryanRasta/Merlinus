@@ -112,4 +112,4 @@ As the only major change will be to introduce a new set of store keys, this chan
 
 ## References
 
-- Issue [#853](https://github.com/warmage-sports/mage/issues/853).
+- Issue [#853](https://github.com/magewar/mage/issues/853).

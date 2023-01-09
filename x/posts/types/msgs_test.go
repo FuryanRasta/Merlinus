@@ -7,7 +7,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 var attachments = []types.AttachmentContent{

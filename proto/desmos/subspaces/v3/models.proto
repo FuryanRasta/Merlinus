@@ -4,7 +4,7 @@ package mage.subspaces.v3;
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/subspaces/types";
+option go_package = "github.com/magewar/mage/x/subspaces/types";
 
 // Subspace contains all the data of a Mage subspace
 message Subspace {

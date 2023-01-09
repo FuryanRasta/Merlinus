@@ -6,10 +6,10 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
 
-	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	profileskeeper "github.com/magewar/mage/x/profiles/keeper"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
@@ -23,13 +23,13 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	db "github.com/tendermint/tm-db"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 	ibchost "github.com/cosmos/ibc-go/v3/modules/core/24-host"
 
-	"github.com/warmage-sports/mage/x/relationships/keeper"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/keeper"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 func TestKeeperTestSuite(t *testing.T) {

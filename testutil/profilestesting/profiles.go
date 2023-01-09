@@ -15,7 +15,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func NewAny(value proto.Message) *codectypes.Any {

@@ -156,7 +156,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/warmage-sports/mage',
+              href: 'https://github.com/magewar/mage',
             },
           ],
         },
@@ -181,7 +181,7 @@ module.exports = {
             const defaultItems = await defaultSidebarItemsGenerator(args);
             return convertPageWithHrefToExternLinks(args.docs, defaultItems);
           },
-          editUrl: 'https://github.com/warmage-sports/mage/tree/master/docs',
+          editUrl: 'https://github.com/magewar/mage/tree/master/docs',
           showLastUpdateTime: true,
           lastVersion: "current",
           exclude: [

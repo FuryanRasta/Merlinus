@@ -3,15 +3,15 @@ package v2_test
 import (
 	"testing"
 
-	v2 "github.com/warmage-sports/mage/x/relationships/legacy/v2"
+	v2 "github.com/magewar/mage/x/relationships/legacy/v2"
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	v1 "github.com/warmage-sports/mage/x/relationships/legacy/v1"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/app"
+	v1 "github.com/magewar/mage/x/relationships/legacy/v1"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 func TestMigrateStore(t *testing.T) {

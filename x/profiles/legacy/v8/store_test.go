@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	v8 "github.com/warmage-sports/mage/x/profiles/legacy/v8"
+	v8 "github.com/magewar/mage/x/profiles/legacy/v8"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 
@@ -20,8 +20,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func buildContext(

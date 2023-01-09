@@ -7,7 +7,7 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 // DONTCOVER

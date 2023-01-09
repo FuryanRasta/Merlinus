@@ -4,7 +4,7 @@ package mage.fees.v1;
 import "gogoproto/gogo.proto";
 import "mage/fees/v1/params.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/fees/types";
+option go_package = "github.com/magewar/mage/x/fees/types";
 
 // GenesisState contains the data of the genesis state for the fees module
 message GenesisState {

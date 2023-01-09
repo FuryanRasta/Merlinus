@@ -9,7 +9,7 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 
 import "mage/relationships/v1/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/relationships/types";
+option go_package = "github.com/magewar/mage/x/relationships/types";
 
 // Query defines the gRPC querier service.
 service Query {

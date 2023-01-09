@@ -14,7 +14,7 @@ A subspace can be created with the `MsgCreateSubspace`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L65-L82 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L65-L75 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L65-L75 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -30,7 +30,7 @@ A subspace can be edited with the `MsgEditSubspace`:
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L93-L119 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L85-L100 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L85-L100 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -46,7 +46,7 @@ A subspace can be deleted using `MsgDeleteSubspace`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L124-L134 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L105-L115 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L105-L115 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -61,7 +61,7 @@ A section can be created using the `MsgCreateSection`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L141-L164 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L122-L145 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L122-L145 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -78,7 +78,7 @@ A section can be edited using the `MsgEditSection`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L175-L198 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L156-L179 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L156-L179 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -94,7 +94,7 @@ A section can be moved to under another section using the `MsgMoveSection`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L203-L226 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L184-L207 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L184-L207 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -112,7 +112,7 @@ A section can be deleted using the `MsgDeleteSection`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L231-L247 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L212-L228 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L212-L228 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -128,7 +128,7 @@ A user group can be created using the `MsgCreateUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L254-L284 
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L235-L265 
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L235-L265 
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -146,7 +146,7 @@ A user group can be edited using the `MsgEditUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L294-L316
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L271-L293
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L271-L293
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -163,7 +163,7 @@ A user group can be moved to another section group using the `MsgMoveUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L321-L344
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L298-L321
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L298-L321
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -181,7 +181,7 @@ A user group permissions can be set using the `MsgSetUserGroupPermissions`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L349-L370
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L326-L347
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L326-L347
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -199,7 +199,7 @@ A user group permissions can be deleted using the `MsgDeleteUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L376-L392
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L353-L369
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L353-L369
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -215,7 +215,7 @@ A user can be added to a user group using the `MsgAddUserToUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L399-L419
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L376-L396
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L376-L396
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -232,7 +232,7 @@ A user can be removed from a user group using the `MsgRemoveUserFromUserGroup`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L425-L445
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L402-L422
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L402-L422
 >>>>>>> 155ccacb (commit)
 ```
 
@@ -249,7 +249,7 @@ A user permissions can be set using the `MsgSetUserPermissions`.
 <<<<<<< HEAD
 https://github.com/desmos-labs/desmos/blob/master/proto/desmos/subspaces/v3/msgs.proto#L453-L477
 =======
-https://github.com/warmage-sports/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L430-L454
+https://github.com/magewar/mage/blob/master/proto/mage/subspaces/v3/msgs.proto#L430-L454
 >>>>>>> 155ccacb (commit)
 ```
 

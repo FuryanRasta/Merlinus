@@ -7,19 +7,19 @@ import (
 	"encoding/hex"
 	"io/ioutil"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/builder"
 
-	cmd "github.com/warmage-sports/mage/app/mage/cmd/chainlink"
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	cmd "github.com/magewar/mage/app/mage/cmd/chainlink"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	multibuilder "github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder/multi"
-	singlebuilder "github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder/single"
-	profilescliutils "github.com/warmage-sports/mage/x/profiles/client/utils"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	multibuilder "github.com/magewar/mage/app/mage/cmd/chainlink/builder/multi"
+	singlebuilder "github.com/magewar/mage/app/mage/cmd/chainlink/builder/single"
+	profilescliutils "github.com/magewar/mage/x/profiles/client/utils"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 )
 
 func BuildMockChainLinkJSONBuilderProvider(getter MockGetter) builder.ChainLinkJSONBuilderProvider {

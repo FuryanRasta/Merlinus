@@ -9,11 +9,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter"
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
-	"github.com/warmage-sports/mage/x/profiles/client/utils"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/getter"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/types"
+	"github.com/magewar/mage/x/profiles/client/utils"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 )
 
 // AccountChainLinkJSONBuilder implements the ChainLinkJSONBuilder for multi signature accounts

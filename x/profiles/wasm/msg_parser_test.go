@@ -8,11 +8,11 @@ import (
 	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/testutil/profilestesting"
-	"github.com/warmage-sports/mage/x/profiles/types"
-	"github.com/warmage-sports/mage/x/profiles/wasm"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/testutil/profilestesting"
+	"github.com/magewar/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/wasm"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestMsgsParser_ParseCustomMsgs(t *testing.T) {

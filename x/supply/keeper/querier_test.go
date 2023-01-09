@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/warmage-sports/mage/x/supply/keeper"
-	"github.com/warmage-sports/mage/x/supply/types"
+	"github.com/magewar/mage/x/supply/keeper"
+	"github.com/magewar/mage/x/supply/types"
 )
 
 func (suite *KeeperTestSuite) TestQuerier_QueryTotalSupply() {

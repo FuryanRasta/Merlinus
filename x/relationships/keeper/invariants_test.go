@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/relationships/keeper"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/keeper"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 func (suite *KeeperTestSuite) TestInvariants() {

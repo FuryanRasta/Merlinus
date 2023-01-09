@@ -4,7 +4,7 @@ package mage.subspaces.v3;
 import "gogoproto/gogo.proto";
 import "mage/subspaces/v3/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/subspaces/types";
+option go_package = "github.com/magewar/mage/x/subspaces/types";
 
 // Msg defines subspaces Msg service.
 service Msg {

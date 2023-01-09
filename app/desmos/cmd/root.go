@@ -7,8 +7,8 @@ import (
 
 	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink"
-	"github.com/warmage-sports/mage/app/mage/cmd/sign"
+	"github.com/magewar/mage/app/mage/cmd/chainlink"
+	"github.com/magewar/mage/app/mage/cmd/sign"
 
 	config "github.com/cosmos/cosmos-sdk/client/config"
 
@@ -18,7 +18,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	"github.com/cosmos/cosmos-sdk/snapshots"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
@@ -42,9 +42,9 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	cosmosgenutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	chainlinktypes "github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter"
-	chainlinkprovider "github.com/warmage-sports/mage/app/mage/cmd/chainlink/provider"
-	genutilcli "github.com/warmage-sports/mage/x/genutil/client/cli"
+	chainlinktypes "github.com/magewar/mage/app/mage/cmd/chainlink/getter"
+	chainlinkprovider "github.com/magewar/mage/app/mage/cmd/chainlink/provider"
+	genutilcli "github.com/magewar/mage/x/genutil/client/cli"
 )
 
 // NewRootCmd creates a new root command for mage. It is called once in the

@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 
 import "mage/reactions/v1/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/reactions/types";
+option go_package = "github.com/magewar/mage/x/reactions/types";
 
 // Msg defines the reactions Msg service.
 service Msg {

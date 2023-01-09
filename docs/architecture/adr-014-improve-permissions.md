@@ -198,5 +198,5 @@ In the future, we might even allow developers to register custom permissions wit
 
 ## References
 
-- Issue [#800](https://github.com/warmage-sports/mage/issues/800)
-- Issue [#855](https://github.com/warmage-sports/mage/issues/855)
+- Issue [#800](https://github.com/magewar/mage/issues/800)
+- Issue [#855](https://github.com/magewar/mage/issues/855)

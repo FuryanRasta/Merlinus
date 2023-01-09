@@ -67,5 +67,5 @@ from the previous versions to the one that will include the additions contained 
 
 ## References
 
-- Issue [#516](https://github.com/warmage-sports/mage/issues/516)
-- PR [#562](https://github.com/warmage-sports/mage/pull/562)
+- Issue [#516](https://github.com/magewar/mage/issues/516)
+- PR [#562](https://github.com/magewar/mage/pull/562)

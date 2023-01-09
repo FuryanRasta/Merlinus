@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/testutil/profilestesting"
+	"github.com/magewar/mage/x/profiles/types"
 
-	"github.com/warmage-sports/mage/x/profiles/wasm"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/profiles/wasm"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func (suite *TestSuite) TestProfilesWasmQuerier_QueryCustom() {

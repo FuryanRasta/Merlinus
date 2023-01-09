@@ -3,7 +3,7 @@ package types_test
 import (
 	"encoding/hex"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	"github.com/mr-tron/base58"
 
@@ -22,11 +22,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 func TestUnmarshalSignature(t *testing.T) {

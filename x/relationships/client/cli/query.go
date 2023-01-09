@@ -9,9 +9,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 // GetQueryCmd returns the command allowing to perform queries

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/reactions/types"
+	"github.com/magewar/mage/x/reactions/types"
 )
 
 func TestValidateGenesis(t *testing.T) {

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/builder"
-	chainlinktypes "github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/builder"
+	chainlinktypes "github.com/magewar/mage/app/mage/cmd/chainlink/getter"
 
 	"github.com/spf13/cobra"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 )
 
 // GetCreateChainLinkJSON returns the command allowing to generate the chain link JSON

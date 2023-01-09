@@ -7,7 +7,7 @@ import (
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 // RandomStandardReason returns a random standard reason from the given slice

@@ -5,10 +5,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
-	"github.com/warmage-sports/mage/x/relationships/keeper"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/keeper"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 func (suite *KeeperTestSuite) TestMsgServer_CreateRelationship() {

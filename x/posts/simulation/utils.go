@@ -8,7 +8,7 @@ import (
 
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 var (

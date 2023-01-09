@@ -3,10 +3,10 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
 
-	"github.com/warmage-sports/mage/x/reports/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/reports/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 type Hooks struct {

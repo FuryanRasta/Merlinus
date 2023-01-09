@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 
 import "mage/posts/v2/models.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/posts/client/utils";
+option go_package = "github.com/magewar/mage/x/posts/client/utils";
 
 // CreatePostJSON contains the data that can be specified when creating a Post
 // using the CLi command

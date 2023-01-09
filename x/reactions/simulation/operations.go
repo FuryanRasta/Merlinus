@@ -5,10 +5,10 @@ package simulation
 import (
 	"math/rand"
 
-	postskeeper "github.com/warmage-sports/mage/x/posts/keeper"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	postskeeper "github.com/magewar/mage/x/posts/keeper"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
@@ -16,8 +16,8 @@ import (
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	sim "github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/warmage-sports/mage/app/params"
-	"github.com/warmage-sports/mage/x/reactions/keeper"
+	"github.com/magewar/mage/app/params"
+	"github.com/magewar/mage/x/reactions/keeper"
 )
 
 // Simulation operation weights constants

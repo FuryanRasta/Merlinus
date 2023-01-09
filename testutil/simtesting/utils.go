@@ -3,7 +3,7 @@ package simtesting
 import (
 	"math/rand"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 

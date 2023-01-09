@@ -6,18 +6,18 @@ import (
 
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 
-	subspacesauthz "github.com/warmage-sports/mage/x/subspaces/authz"
-	v4 "github.com/warmage-sports/mage/x/subspaces/legacy/v4"
+	subspacesauthz "github.com/magewar/mage/x/subspaces/authz"
+	v4 "github.com/magewar/mage/x/subspaces/legacy/v4"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/testutil/storetesting"
-	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/testutil/storetesting"
+	v2 "github.com/magewar/mage/x/subspaces/legacy/v2"
+	"github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestMigrateStore(t *testing.T) {

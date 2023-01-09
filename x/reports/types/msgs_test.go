@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/types"
 )
 
 var msgCreateReport = types.NewMsgCreateReport(

@@ -352,5 +352,5 @@ The changes described inside this ADR are **not** backward compatible. To solve 
 
 ## References
 
-- [Issue #890](https://github.com/warmage-sports/mage/issues/890)
+- [Issue #890](https://github.com/magewar/mage/issues/890)
 - [Discord reactions](https://support.discord.com/hc/en-us/articles/360041139231-Adding-Emojis-and-Reactions)

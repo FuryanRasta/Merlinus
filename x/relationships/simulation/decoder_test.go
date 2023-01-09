@@ -8,10 +8,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/app"
+	"github.com/magewar/mage/app"
 
-	"github.com/warmage-sports/mage/x/relationships/simulation"
-	"github.com/warmage-sports/mage/x/relationships/types"
+	"github.com/magewar/mage/x/relationships/simulation"
+	"github.com/magewar/mage/x/relationships/types"
 )
 
 func TestDecodeStore(t *testing.T) {

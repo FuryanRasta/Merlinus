@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/posts/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestsuite) TestKeeper_AfterSubspaceSaved() {

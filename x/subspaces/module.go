@@ -8,18 +8,18 @@ import (
 
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 
-	v2 "github.com/warmage-sports/mage/x/subspaces/legacy/v2"
+	v2 "github.com/magewar/mage/x/subspaces/legacy/v2"
 
-	"github.com/warmage-sports/mage/x/subspaces/authz"
+	"github.com/magewar/mage/x/subspaces/authz"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	"github.com/warmage-sports/mage/x/subspaces/simulation"
+	"github.com/magewar/mage/x/subspaces/simulation"
 
-	"github.com/warmage-sports/mage/x/subspaces/client/cli"
+	"github.com/magewar/mage/x/subspaces/client/cli"
 
-	"github.com/warmage-sports/mage/x/subspaces/keeper"
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/keeper"
+	"github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

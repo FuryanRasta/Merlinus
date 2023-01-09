@@ -6,7 +6,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/types"
 
 	"github.com/manifoldco/promptui"
 )

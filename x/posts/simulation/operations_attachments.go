@@ -5,7 +5,7 @@ package simulation
 import (
 	"math/rand"
 
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -14,12 +14,12 @@ import (
 	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/warmage-sports/mage/testutil/simtesting"
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
-	"github.com/warmage-sports/mage/x/posts/keeper"
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacessim "github.com/warmage-sports/mage/x/subspaces/simulation"
+	"github.com/magewar/mage/testutil/simtesting"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
+	"github.com/magewar/mage/x/posts/keeper"
+	"github.com/magewar/mage/x/posts/types"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacessim "github.com/magewar/mage/x/subspaces/simulation"
 )
 
 // SimulateMsgAddPostAttachment tests and runs a single msg add post attachment

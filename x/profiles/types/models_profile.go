@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/warmage-sports/mage/x/commons"
+	"github.com/magewar/mage/x/commons"
 )
 
 // NewPictures is a constructor function for Pictures

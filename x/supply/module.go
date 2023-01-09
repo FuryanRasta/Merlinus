@@ -16,10 +16,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/warmage-sports/mage/x/supply/client/cli"
-	"github.com/warmage-sports/mage/x/supply/client/rest"
-	"github.com/warmage-sports/mage/x/supply/keeper"
-	"github.com/warmage-sports/mage/x/supply/types"
+	"github.com/magewar/mage/x/supply/client/cli"
+	"github.com/magewar/mage/x/supply/client/rest"
+	"github.com/magewar/mage/x/supply/keeper"
+	"github.com/magewar/mage/x/supply/types"
 )
 
 var (

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/x/subspaces/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

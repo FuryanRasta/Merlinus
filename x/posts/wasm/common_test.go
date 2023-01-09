@@ -10,25 +10,25 @@ import (
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/x/posts/keeper"
-	profileskeeper "github.com/warmage-sports/mage/x/profiles/keeper"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/x/posts/keeper"
+	profileskeeper "github.com/magewar/mage/x/profiles/keeper"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	"github.com/stretchr/testify/suite"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	db "github.com/tendermint/tm-db"
 
-	relationshipskeeper "github.com/warmage-sports/mage/x/relationships/keeper"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	relationshipskeeper "github.com/magewar/mage/x/relationships/keeper"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/types"
 )
 
 func buildCreatePostRequest(cdc codec.Codec, msg sdk.Msg) json.RawMessage {

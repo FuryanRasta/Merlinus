@@ -7,10 +7,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/getter"
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
-	"github.com/warmage-sports/mage/x/profiles/client/utils"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/getter"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/types"
+	"github.com/magewar/mage/x/profiles/client/utils"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 )
 
 const (

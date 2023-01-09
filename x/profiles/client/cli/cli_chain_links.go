@@ -12,8 +12,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/spf13/cobra"
 
-	profilescliutils "github.com/warmage-sports/mage/x/profiles/client/utils"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	profilescliutils "github.com/magewar/mage/x/profiles/client/utils"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 // GetCmdLinkChainAccount returns the command allowing to link an external chain account

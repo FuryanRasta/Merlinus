@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	v4 "github.com/warmage-sports/mage/x/profiles/legacy/v4/types"
-	v5 "github.com/warmage-sports/mage/x/profiles/legacy/v5/types"
+	v4 "github.com/magewar/mage/x/profiles/legacy/v4/types"
+	v5 "github.com/magewar/mage/x/profiles/legacy/v5/types"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
@@ -25,10 +25,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/warmage-sports/mage/x/profiles/client/cli"
-	"github.com/warmage-sports/mage/x/profiles/keeper"
-	"github.com/warmage-sports/mage/x/profiles/simulation"
-	"github.com/warmage-sports/mage/x/profiles/types"
+	"github.com/magewar/mage/x/profiles/client/cli"
+	"github.com/magewar/mage/x/profiles/keeper"
+	"github.com/magewar/mage/x/profiles/simulation"
+	"github.com/magewar/mage/x/profiles/types"
 )
 
 const (

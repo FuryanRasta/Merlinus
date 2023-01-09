@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"math/rand"
 
-	v2 "github.com/warmage-sports/mage/x/posts/legacy/v2"
+	v2 "github.com/magewar/mage/x/posts/legacy/v2"
 
-	"github.com/warmage-sports/mage/x/posts/simulation"
-	subspaceskeeper "github.com/warmage-sports/mage/x/subspaces/keeper"
+	"github.com/magewar/mage/x/posts/simulation"
+	subspaceskeeper "github.com/magewar/mage/x/subspaces/keeper"
 
-	feeskeeper "github.com/warmage-sports/mage/x/fees/keeper"
+	feeskeeper "github.com/magewar/mage/x/fees/keeper"
 
-	"github.com/warmage-sports/mage/x/posts/client/cli"
-	"github.com/warmage-sports/mage/x/posts/keeper"
-	"github.com/warmage-sports/mage/x/posts/types"
+	"github.com/magewar/mage/x/posts/client/cli"
+	"github.com/magewar/mage/x/posts/keeper"
+	"github.com/magewar/mage/x/posts/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

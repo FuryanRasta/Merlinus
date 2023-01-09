@@ -3,12 +3,12 @@ package types_test
 import (
 	"testing"
 
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/warmage-sports/mage/x/fees/types"
+	"github.com/magewar/mage/x/fees/types"
 )
 
 func TestValidateParams(t *testing.T) {

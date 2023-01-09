@@ -1,8 +1,8 @@
 package builder
 
 import (
-	"github.com/warmage-sports/mage/app/mage/cmd/chainlink/types"
-	"github.com/warmage-sports/mage/x/profiles/client/utils"
+	"github.com/magewar/mage/app/mage/cmd/chainlink/types"
+	"github.com/magewar/mage/x/profiles/client/utils"
 )
 
 // ChainLinkJSONBuilder allows to build a ChainLinkJSON instance

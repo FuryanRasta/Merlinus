@@ -11,7 +11,7 @@ import "mage/profiles/v3/msgs_dtag_requests.proto";
 import "mage/profiles/v3/msgs_chain_links.proto";
 import "mage/profiles/v3/msgs_app_links.proto";
 
-option go_package = "github.com/warmage-sports/mage/x/profiles/types";
+option go_package = "github.com/magewar/mage/x/profiles/types";
 
 // Msg defines the relationships Msg service.
 service Msg {

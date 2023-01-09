@@ -18,12 +18,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/warmage-sports/mage/app"
-	"github.com/warmage-sports/mage/testutil"
-	"github.com/warmage-sports/mage/x/posts/client/cli"
-	cliutils "github.com/warmage-sports/mage/x/posts/client/utils"
-	"github.com/warmage-sports/mage/x/posts/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	"github.com/magewar/mage/app"
+	"github.com/magewar/mage/testutil"
+	"github.com/magewar/mage/x/posts/client/cli"
+	cliutils "github.com/magewar/mage/x/posts/client/utils"
+	"github.com/magewar/mage/x/posts/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func TestIntegrationTestSuite(t *testing.T) {

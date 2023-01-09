@@ -3,15 +3,15 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/warmage-sports/mage/testutil/profilestesting"
+	"github.com/magewar/mage/testutil/profilestesting"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	poststypes "github.com/warmage-sports/mage/x/posts/types"
-	"github.com/warmage-sports/mage/x/reactions/keeper"
-	"github.com/warmage-sports/mage/x/reactions/types"
-	relationshipstypes "github.com/warmage-sports/mage/x/relationships/types"
-	subspacestypes "github.com/warmage-sports/mage/x/subspaces/types"
+	poststypes "github.com/magewar/mage/x/posts/types"
+	"github.com/magewar/mage/x/reactions/keeper"
+	"github.com/magewar/mage/x/reactions/types"
+	relationshipstypes "github.com/magewar/mage/x/relationships/types"
+	subspacestypes "github.com/magewar/mage/x/subspaces/types"
 )
 
 func (suite *KeeperTestSuite) TestMsgServer_AddReaction() {

@@ -8,10 +8,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/warmage-sports/mage/app"
-	profilestypes "github.com/warmage-sports/mage/x/profiles/types"
-	"github.com/warmage-sports/mage/x/reports/types"
-	"github.com/warmage-sports/mage/x/reports/wasm"
+	"github.com/magewar/mage/app"
+	profilestypes "github.com/magewar/mage/x/profiles/types"
+	"github.com/magewar/mage/x/reports/types"
+	"github.com/magewar/mage/x/reports/wasm"
 )
 
 func TestMsgsParser_ParseCustomMsgs(t *testing.T) {

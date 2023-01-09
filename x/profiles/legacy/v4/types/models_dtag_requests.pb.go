@@ -6,7 +6,7 @@ package types
 import (
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-sdk/codec/types"
-	_ "github.com/warmage-sports/mage/x/profiles/types"
+	_ "github.com/magewar/mage/x/profiles/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/regen-network/cosmos-proto"
